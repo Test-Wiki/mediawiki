@@ -167,12 +167,12 @@ $wgUserLevels = array(
 );
 $wgUserStatsPointValues['edit'] = 100; // Points awarded on a mainspace edit
 $wgUserStatsPointValues['referral_complete'] = 0; // Points awarded for recruiting a new user
-$wgUserStatsPointValues['friend'] = 20; // Points awarded for adding a friend
+$wgUserStatsPointValues['friend'] = 200; // Points awarded for adding a friend
 $wgUserStatsPointValues['foe'] = 0; // Points awarded for adding a foe
 $wgUserStatsPointValues['gift_rec'] = 0; // Points awarded for receiving a gift
 $wgUserStatsPointValues['gift_sent'] = 0; // Points awarded for giving a gift
-$wgUserStatsPointValues['points_winner_weekly'] = 0; // Points awarded for having the most points for a week
-$wgUserStatsPointValues['points_winner_monthly'] = 0; // Points awarded for having the most points for a month
+$wgUserStatsPointValues['points_winner_weekly'] = 300; // Points awarded for having the most points for a week
+$wgUserStatsPointValues['points_winner_monthly'] = 400; // Points awarded for having the most points for a month
 $wgUserStatsPointValues['user_image'] = 1000; // Points awarded for adding your first avatar
 $wgNamespacesForEditPoints = array( 0 ); // Array of namespaces that can earn you points. Use numerical keys. Default is 0 -- only main namespace edits can earn a user points.
 // Chat
