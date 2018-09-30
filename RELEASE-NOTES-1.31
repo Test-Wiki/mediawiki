@@ -1,4 +1,36 @@
-== MediaWiki 1.31 ==
+== MediaWiki 1.31.2 ==
+
+THIS IS NOT A RELEASE YET
+
+=== Changes since MediaWiki 1.31.1 ===
+* (T204729) WatchedItemStore::countVisitingWatchersMultiple() shouldn't query all
+  titles when asked for none
+
+== MediaWiki 1.31.1 ==
+
+This is a security and maintenance release of the MediaWiki 1.31 branch.
+
+=== Changes since MediaWiki 1.31.0 ===
+* (T169545, CVE-2018-0503) SECURITY: $wgRateLimits entry for 'user' overrides
+  'newbie'.
+* (T194605, CVE-2018-0505) SECURITY: BotPasswords can bypass CentralAuth's
+  account lock.
+* (T199029, CVE-2018-13258) SECURITY: Tarball was missing .htaccess files.
+* (T197229) Bundle Nuke extension, it was accidentally omitted.
+* (T193995) Fix undefined patchPath() method call in parser tests.
+* (T198687) Fix various selectFields methods to use the string 'NULL', not null.
+* Special:BotPasswords now requires reauthentication.
+* (T191608, T187638) Add 'logid' parameter to Special:Log.
+* (T193829) Indicate when a Bot Password needs reset.
+* (T198037) GitInfo: Don't try shelling out if it's disabled.
+* (T151415) Log email changes.
+* (T197206) Fix performance regression when multiple DB used without caching.
+* (T197030) PHPSessionHandler: Suppress headers warnings in initialize().
+* (T182377, T196793) Exif: Guard against uncountable tag values.
+* (T200861) Fix total breakage of SQLite web upgrade.
+* (T200864) Fix pingback over-reporting on non-MySQL databases
+* (T202550) Unbreak SpecialListusersHeaderForm and SpecialListusersHeader
+  hooks. 
 
 === Changes since MediaWiki 1.31.0-rc.2 ===
 * (T195783) Initialize PSR-4 namespaces at same stage as normal autoloader.
@@ -31,6 +63,10 @@
   to the ar_text and ar_flags columns of the archive table or make those
   columns nullable before upgrading to MediaWiki 1.31.
   maintenance/archives/patch-nullable-ar_text.sql shows how to do this for MySQL.
+* The CologneBlue and Modern skins are no longer bundled with the tarball. You
+  will need to remove the wfLoadSkin() calls from your LocalSettings.php or
+  download them separately
+  (<https://www.mediawiki.org/wiki/Special:SkinDistributor>).
 
 === Configuration changes in 1.31 ===
 * $wgEnableAPI and $wgEnableWriteAPI are now deprecated and will be removed in
