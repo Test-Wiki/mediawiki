@@ -181,6 +181,7 @@ wfLoadExtension( 'MediaWikiChat' );
 	$wgChatMeCommand = true;
 	$wgChatLinkUsernames = true;
 // Other
+$wgULSGeoService = false;
 $wgAllowUserCss = true;
 $wgAllowUserJs = true;
 $wgAllowCopyUploads = true;
