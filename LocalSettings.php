@@ -376,3 +376,4 @@ $wgGroupPermissions['staff']['giftadmin'] = false;
 $wgImplicitGroups[] = 'staff';
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
+$wgCookieWarningEnabled = true;
