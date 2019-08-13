@@ -108,6 +108,7 @@ wfLoadExtensions( array(
 	'CheckUser',
 	'CodeEditor',
 	'ConfirmEdit',
+	'CookieWarning',
 	'DismissableSiteNotice',
 	'Echo',
 	'Gadgets',
