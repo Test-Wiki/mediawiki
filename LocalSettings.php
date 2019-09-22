@@ -382,3 +382,5 @@ $wgCookieWarningGeoIp2 = true;
 $wgCookieWarningGeoIp2Path = '/var/www/html/piwik/misc/GeoLite2-City.mmdb';
 
 $wgGroupPermissions['autopatrol'] ['patrol'] = true;
+$wgGroupPermissions['edtor'] ['patrol'] = true;
+$wgGroupPermissions['edtor'] ['autopatrol'] = true;
