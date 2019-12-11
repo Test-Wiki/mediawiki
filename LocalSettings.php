@@ -136,7 +136,7 @@ $wgMWOAuthSecureTokenTransfer = true;
 require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
 require_once "$IP/extensions/JavascriptSlideshow/JavascriptSlideshow.php";
 require_once "$IP/extensions/Scribunto/Scribunto.php";
-$wgScribuntoDefaultEngine = 'luasandbox';
+$wgScribuntoDefaultEngine = 'luastandalone';
 require_once "$IP/extensions/Translate/Translate.php";
 # End of automatically generated settings.
 # Add more configuration options below.
