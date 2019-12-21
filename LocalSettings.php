@@ -111,6 +111,7 @@ wfLoadExtensions( array(
 	'CookieWarning',
 	'DismissableSiteNotice',
 	'Echo',
+	'Flow',
 	'Gadgets',
 	'Interwiki',
 	'InputBox',
@@ -142,6 +143,9 @@ require_once "$IP/extensions/Translate/Translate.php";
 # Add more configuration options below.
 // Captcha
 wfLoadExtension('ConfirmEdit/ReCaptchaNoCaptcha' );
+//Flow
+$wgFlowContentFormat = 'html';
+$wgFlowEditorList = array( 'visualeditor', 'none' );
 // SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");
 require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
