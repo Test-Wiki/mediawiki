@@ -124,6 +124,7 @@ wfLoadExtensions( array(
 	'ParserFunctions',
 	'PdfHandler',
 	'RenameUser',
+	'Scribunto',
 	'SpamBlacklist',
 	'StaffPowers',
 	'Thanks',
@@ -136,7 +137,6 @@ wfLoadExtensions( array(
 $wgMWOAuthSecureTokenTransfer = true;
 require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
 require_once "$IP/extensions/JavascriptSlideshow/JavascriptSlideshow.php";
-require_once "$IP/extensions/Scribunto/Scribunto.php";
 $wgScribuntoDefaultEngine = 'luasandbox';
 require_once "$IP/extensions/Translate/Translate.php";
 # End of automatically generated settings.
