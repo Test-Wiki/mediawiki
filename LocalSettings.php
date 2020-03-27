@@ -218,6 +218,7 @@ $wgTitleBlacklistSources = array(
 //MatomoAnalytics
 $wgMatomoAnalyticsServerURL = 'https://piwik.testwiki.wiki/';
 $wgMatomoAnalyticsSiteID = 3;
+$wgMatomoAnalyticsGlobalID = 'false';
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
@@ -381,3 +382,4 @@ $wgCookieWarningEnabled = true;
 $wgCookieWarningGeoIPLookup = 'php';
 $wgCookieWarningGeoIp2 = true;
 $wgCookieWarningGeoIp2Path = '/var/www/html/piwik/misc/GeoLite2-City.mmdb';
+$wgEnablePartialBlocks = true;
