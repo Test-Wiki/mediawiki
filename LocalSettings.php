@@ -109,15 +109,18 @@ wfLoadExtensions( array(
 	'CheckUser',
 	'CodeEditor',
 	'ConfirmEdit',
+	'ConfirmEdit/ReCaptchaNoCaptcha'
 	'CookieWarning',
 	'DismissableSiteNotice',
 	'Echo',
+	'FlaggedRevs',
 	'Gadgets',
 	'Interwiki',
 	'InputBox',
 	'MaintenanceShell',
 	'MassMessage',
 	'MatomoAnalytics',
+	'MediaWikiChat'
 	'Nuke',
 	'OAuth',
 	'OATHAuth',
@@ -129,20 +132,16 @@ wfLoadExtensions( array(
 	'StaffPowers',
 	'Thanks',
 	'TitleBlacklist',
+	'Translate',
 	'UniversalLanguageSelector',
 	'VisualEditor',
 	'WikiEditor',
 	'WikiLove',
 ) );
 $wgMWOAuthSecureTokenTransfer = true;
-require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
-require_once "$IP/extensions/JavascriptSlideshow/JavascriptSlideshow.php";
 $wgScribuntoDefaultEngine = 'luasandbox';
-require_once "$IP/extensions/Translate/Translate.php";
 # End of automatically generated settings.
 # Add more configuration options below.
-// Captcha
-wfLoadExtension('ConfirmEdit/ReCaptchaNoCaptcha' );
 // SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");
 require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
@@ -178,7 +177,6 @@ $wgUserStatsPointValues['points_winner_monthly'] = 400; // Points awarded for ha
 $wgUserStatsPointValues['user_image'] = 1000; // Points awarded for adding your first avatar
 $wgNamespacesForEditPoints = array( 0 ); // Array of namespaces that can earn you points. Use numerical keys. Default is 0 -- only main namespace edits can earn a user points.
 // Chat
-wfLoadExtension( 'MediaWikiChat' );
 	$wgChatKicks = true;
 	$wgChatMeCommand = true;
 	$wgChatLinkUsernames = true;
