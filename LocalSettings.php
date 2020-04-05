@@ -120,7 +120,7 @@ wfLoadExtensions( array(
 	'MaintenanceShell',
 	'MassMessage',
 	'MatomoAnalytics',
-	'MediaWikiChat'
+	'MediaWikiChat',
 	'Nuke',
 	'OAuth',
 	'OATHAuth',
