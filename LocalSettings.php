@@ -109,7 +109,7 @@ wfLoadExtensions( array(
 	'CheckUser',
 	'CodeEditor',
 	'ConfirmEdit',
-	'ConfirmEdit/ReCaptchaNoCaptcha'
+	'ConfirmEdit/ReCaptchaNoCaptcha',
 	'CookieWarning',
 	'DismissableSiteNotice',
 	'Echo',
