@@ -370,9 +370,9 @@ $wgRestrictionTypes = array( 'create', 'edit', 'move', 'upload', 'delete', 'prot
 $wgCascadingRestrictionLevels = array( 'bureaucrat', 'sysop', 'steward' );
 $wgSemiprotectedRestrictionLevels = array( 'user', 'autoconfirmed', );
 unset( $wgGroupPermissions['staff'] );
-$wgGroupPermissions['staff']['unblockable'] = false;
-$wgGroupPermissions['staff']['awardsmanage'] = false;
-$wgGroupPermissions['staff']['giftadmin'] = false;
+$wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
+    unset( $wgGroupPermissions['staff'] );
+};
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 $wgCookieWarningEnabled = true;
