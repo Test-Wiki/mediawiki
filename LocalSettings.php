@@ -117,7 +117,6 @@ wfLoadExtensions( array(
 	'Gadgets',
 	'Interwiki',
 	'InputBox',
-	'MaintenanceShell',
 	'MassMessage',
 	'MatomoAnalytics',
 	'MediaWikiChat',
@@ -329,7 +328,6 @@ $wgGroupPermissions['steward']['avatarremove'] = true;
 $wgGroupPermissions['steward']['updatepoints'] = true;
 $wgGroupPermissions['steward']['generatetopusersreport'] = true;
 $wgGroupPermissions['sysadmin']['siteadmin'] = true;
-$wgGroupPermissions['sysadmin']['maintenanceshell'] = true;
 $wgGroupPermissions['sysadmin']['unblockable'] = true;
 $wgGroupPermissions['sysadmin']['unblockself'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
@@ -375,7 +373,6 @@ unset( $wgGroupPermissions['staff'] );
 $wgGroupPermissions['staff']['unblockable'] = false;
 $wgGroupPermissions['staff']['awardsmanage'] = false;
 $wgGroupPermissions['staff']['giftadmin'] = false;
-$wgImplicitGroups[] = 'staff';
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 $wgCookieWarningEnabled = true;
