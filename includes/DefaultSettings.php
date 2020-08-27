@@ -127,6 +127,26 @@ $wgServerName = false;
  */
 
 /**
+ * If this is true, when an insecure HTTP request is received, always redirect
+ * to HTTPS. This overrides and disables the preferhttps user preference, and it
+ * overrides $wgSecureLogin and the CanIPUseHTTPS hook.
+ *
+ * $wgServer may be either https or protocol-relative. If $wgServer starts with
+ * "http://", an exception will be thrown.
+ *
+ * If a reverse proxy or CDN is used to forward requests from HTTPS to HTTP,
+ * the request header "X-Forwarded-Proto: https" should be sent to suppress
+ * the redirect.
+ *
+ * In addition to setting this to true, for optimal security, the web server
+ * should also be configured to send Strict-Transport-Security response headers.
+ *
+ * @var bool
+ * @since 1.34.3
+ */
+$wgForceHTTPS = false;
+
+/**
  * The path we should point to.
  * It might be a virtual path in case with use apache mod_rewrite for example.
  *
@@ -3759,14 +3779,17 @@ $wgLegacyJavaScriptGlobals = true;
 /**
  * ResourceLoader will not generate URLs whose query string is more than
  * this many characters long, and will instead use multiple requests with
- * shorter query strings. This degrades performance, but may be needed based
- * on the query string limit supported by your web server and/or your user's
- * web browsers.
+ * shorter query strings. Using multiple requests may degrade performance,
+ * but may be needed based on the query string limit supported by your web
+ * server and/or your user's web browsers.
  *
+ * Default: `2000`.
+ *
+ * @see ResourceLoaderStartUpModule::getMaxQueryLength
  * @since 1.17
  * @var int
  */
-$wgResourceLoaderMaxQueryLength = 2000;
+$wgResourceLoaderMaxQueryLength = false;
 
 /**
  * If set to true, JavaScript modules loaded from wiki pages will be parsed
@@ -6035,7 +6058,11 @@ $wgCookiePath = '/';
  * Whether the "secure" flag should be set on the cookie. This can be:
  *   - true:      Set secure flag
  *   - false:     Don't set secure flag
- *   - "detect":  Set the secure flag if $wgServer is set to an HTTPS URL
+ *   - "detect":  Set the secure flag if $wgServer is set to an HTTPS URL,
+ *                or if $wgForceHTTPS is true.
+ *
+ * If $wgForceHTTPS is true, session cookies will be secure regardless of this
+ * setting. However, other cookies will still be affected.
  */
 $wgCookieSecure = 'detect';
 
@@ -6060,6 +6087,28 @@ $wgCookiePrefix = false;
  * XSS attack.
  */
 $wgCookieHttpOnly = true;
+
+/**
+ * The SameSite cookie attribute used for login cookies. This can be "Lax",
+ * "Strict", "None" or empty/null to omit the attribute.
+ *
+ * This only applies to login cookies, since the correct value for other
+ * cookies depends on what kind of cookie it is.
+ *
+ * @since 1.34.3
+ * @var string|null
+ */
+$wgCookieSameSite = null;
+
+/**
+ * If true, when a cross-site cookie with SameSite=None is sent, a legacy
+ * cookie with an "ss0" prefix will also be sent, without SameSite=None. This
+ * is a workaround for broken behaviour in Chrome 51-66 and similar browsers.
+ *
+ * @since 1.34.3
+ * @var bool
+ */
+$wgUseSameSiteLegacyCookies = false;
 
 /**
  * A list of cookies that vary the cache (for use by extensions)
