@@ -89,7 +89,7 @@ $wgRightsIcon = "";
 $wgDiff3 = "";
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
-$wgDefaultSkin = "timeless";
+$wgDefaultSkin = "vector";
 # Enabled skins.
 # The following skins were automatically enabled:
 wfLoadSkins( array( 
@@ -120,6 +120,7 @@ wfLoadExtensions( array(
 	'MassMessage',
 	'MatomoAnalytics',
 	'MediaWikiChat',
+        'MobileFrontend',
 	'Nuke',
 	'OAuth',
 	'OATHAuth',
@@ -180,6 +181,7 @@ $wgNamespacesForEditPoints = array( 0 ); // Array of namespaces that can earn yo
 	$wgChatMeCommand = true;
 	$wgChatLinkUsernames = true;
 // Other
+$wgMFDefaultSkinClass = 'SkinTimeless';
 $wgULSGeoService = false;
 $wgAllowUserCss = true;
 $wgAllowUserJs = true;
