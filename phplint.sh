@@ -1,7 +1,7 @@
 #! /bin/bash
 # Author Addshore
 
-find ./ -type f -name '*.php' -exec php -l {} \; | grep "Errors parsing ";
+find ./ -type f -name 'LocalSettings.php' -exec php -l {} \; | grep "Errors parsing ";
 
 # Flip the exit code
 if [ $? -ne 0 ]
