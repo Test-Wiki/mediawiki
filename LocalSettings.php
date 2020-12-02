@@ -139,7 +139,7 @@ wfLoadExtensions( array(
 	'WikiLove',
 ) );
 $wgMWOAuthSecureTokenTransfer = true;
-$wgScribuntoDefaultEngine = 'luasandbox';
+$wgScribuntoDefaultEngine = 'luastandalone';
 # End of automatically generated settings.
 # Add more configuration options below.
 // SocialProfile
