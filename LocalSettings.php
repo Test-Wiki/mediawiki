@@ -139,6 +139,7 @@ wfLoadExtensions( array(
 	'WikiLove',
 ) );
 $wgMWOAuthSecureTokenTransfer = true;
+$wgOAuth2RequireCodeChallengeForPublicClients = false;
 $wgScribuntoDefaultEngine = 'luastandalone';
 # End of automatically generated settings.
 # Add more configuration options below.
