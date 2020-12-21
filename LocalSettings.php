@@ -140,7 +140,7 @@ wfLoadExtensions( array(
 ) );
 $wgMWOAuthSecureTokenTransfer = true;
 $wgOAuth2RequireCodeChallengeForPublicClients = false;
-$wgScribuntoDefaultEngine = 'luastandalone';
+$wgScribuntoDefaultEngine = 'luasandbox';
 # End of automatically generated settings.
 # Add more configuration options below.
 // SocialProfile
