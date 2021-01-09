@@ -54,18 +54,31 @@ return [
 		'deprecated' => 'Your default skin ResourceLoader class should use '
 			. 'ResourceLoaderSkinModule::class',
 		'class' => ResourceLoaderSkinModule::class,
-		'features' => [ 'elements', 'legacy' ],
+		'features' => [
+			'elements' => true,
+			'legacy' => true,
+		],
 	],
 	'mediawiki.skinning.content' => [
 		'deprecated' => 'Your default skin ResourceLoader class should use '
 			. 'ResourceLoaderSkinModule::class',
 		'class' => ResourceLoaderSkinModule::class,
-		'features' => [ 'elements', 'content', 'legacy' ],
+		'features' => [
+			'elements' => true,
+			'content' => true,
+			'legacy' => true,
+		],
 	],
 	// Used in the web installer. Test it after modifying this definition!
 	'mediawiki.skinning.interface' => [
 		'class' => ResourceLoaderSkinModule::class,
-		'features' => [ 'elements', 'content', 'interface', 'logo', 'legacy' ],
+		'features' => [
+			'elements' => true,
+			'content' => true,
+			'interface' => true,
+			'logo' => true,
+			'legacy' => true,
+		],
 	],
 	'jquery.makeCollapsible.styles' => [
 		'targets' => [ 'desktop', 'mobile' ],
@@ -1977,6 +1990,17 @@ return [
 		],
 		'targets' => [ 'desktop', 'mobile' ],
 	],
+	'mediawiki.special.changeslist.watchlistexpiry' => [
+		'scripts' => 'resources/src/mediawiki.special.changeslist.watchlistexpiry/watchlistexpiry.js',
+		'styles' => 'resources/src/mediawiki.special.changeslist.watchlistexpiry/watchlistexpiry.less',
+		'messages' => [
+			'parentheses',
+			'watchlist-expiry-days-left',
+			'watchlist-expiry-hours-left',
+		],
+		'targets' => [ 'desktop', 'mobile' ],
+		'dependencies' => [ 'mediawiki.special' ],
+	],
 	'mediawiki.special.changeslist.enhanced' => [
 		'styles' => 'resources/src/mediawiki.special.changeslist.enhanced.less',
 	],
@@ -2251,7 +2275,9 @@ return [
 		'deprecated' => 'Your default skin ResourceLoader class should use '
 			. 'ResourceLoaderSkinModule::class',
 		'class' => ResourceLoaderSkinModule::class,
-		'features' => [ 'legacy' ],
+		'features' => [
+			'legacy' => true,
+		],
 		'targets' => [ 'desktop', 'mobile' ],
 	],
 	'mediawiki.legacy.oldshared' => [
@@ -2713,6 +2739,7 @@ return [
 			'oojs-ui'
 		],
 		'messages' => [
+			'accesskey-ca-watch',
 			'addedwatchexpiry-options-label',
 			'addedwatchexpirytext',
 			'addedwatchexpirytext-talk',
