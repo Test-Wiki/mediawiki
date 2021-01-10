@@ -138,6 +138,8 @@ wfLoadExtensions( array(
 	'WikiEditor',
 	'WikiLove',
 ) );
+
+$wgVisualEditorEnableWikitext = true;
 $wgMWOAuthSecureTokenTransfer = true;
 $wgOAuth2RequireCodeChallengeForPublicClients = false;
 $wgScribuntoDefaultEngine = 'luasandbox';
