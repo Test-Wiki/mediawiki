@@ -193,6 +193,7 @@ $wgLocaltimezone = "UTC";
 date_default_timezone_set( $wgLocaltimezone );
 $wgAutoConfirmAge = 86400;
 $wgAutoConfirmCount = 1;
+$wgEnableScaryTranscluding = true;
 $wgDefaultUserOptions['wikilove-enabled'] = 1;
 $wgFlaggedRevsStatsAge = false;
 $wgFlaggedRevsProtection = true;
