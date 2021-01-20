@@ -121,7 +121,7 @@ wfLoadExtensions( array(
 	'MassMessage',
 	'MatomoAnalytics',
 	'MediaWikiChat',
-        'MobileFrontend',
+	'MobileFrontend',
 	'Newsletter',
 	'Nuke',
 	'OAuth',
