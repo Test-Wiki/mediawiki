@@ -326,7 +326,7 @@ $wgGroupPermissions['steward']['mwoauthupdateownconsumer'] = true;
 $wgGroupPermissions['steward']['mwoauthproposeconsumer'] = true;
 $wgGroupPermissions['steward']['renameuser'] = true;
 $wgGroupPermissions['steward']['steward'] = true;
-$wgGroupPermissions['steward']['editothersprofiles'] = true;
+
 $wgGroupPermissions['steward']['editothersprofiles-private'] = true;
 $wgGroupPermissions['steward']['populate-user-profiles'] = true;
 $wgGroupPermissions['steward']['avatarremove'] = true;
