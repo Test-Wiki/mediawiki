@@ -94,6 +94,7 @@ $wgDefaultSkin = "vector";
 # The following skins were automatically enabled:
 wfLoadSkins( array( 
 	'CologneBlue',
+	'Cosmos',
 	'Modern',
 	'MonoBook',
 	'Vector' ,
@@ -121,6 +122,7 @@ wfLoadExtensions( array(
 	'MatomoAnalytics',
 	'MediaWikiChat',
         'MobileFrontend',
+	'Newsletter',
 	'Nuke',
 	'OAuth',
 	'OATHAuth',
