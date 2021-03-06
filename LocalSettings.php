@@ -147,40 +147,6 @@ $wgOAuth2RequireCodeChallengeForPublicClients = false;
 $wgScribuntoDefaultEngine = 'luasandbox';
 # End of automatically generated settings.
 # Add more configuration options below.
-// SocialProfile
-require_once("$IP/extensions/SocialProfile/SocialProfile.php");
-require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
-// The actual user level definitions -- key is simple: 'Level name' => points needed
-$wgUserLevels = array(
-	'Recruit' => 0,
-	'Apprentice' => 1200,
-	'Private' => 1750,
-	'Corporal' => 2500,
-	'Sergeant' => 5000,
-	'Gunnery Sergeant' =>10000,
-	'Lieutenant' => 20000,
-	'Captain' => 35000,
-	'Major' => 50000,
-	'Lieutenant Commander' => 75000,
-	'Commander' => 100000,
-	'Colonel' => 150000,
-	'Brigadier' => 250000,
-	'Brigadier General' => 350000,
-	'Major General' => 500000,
-	'Lieutenant General' => 650000,
-	'General' => 800000,
-	'General of the Army' => 1000000,
-);
-$wgUserStatsPointValues['edit'] = 100; // Points awarded on a mainspace edit
-$wgUserStatsPointValues['referral_complete'] = 0; // Points awarded for recruiting a new user
-$wgUserStatsPointValues['friend'] = 200; // Points awarded for adding a friend
-$wgUserStatsPointValues['foe'] = 0; // Points awarded for adding a foe
-$wgUserStatsPointValues['gift_rec'] = 0; // Points awarded for receiving a gift
-$wgUserStatsPointValues['gift_sent'] = 0; // Points awarded for giving a gift
-$wgUserStatsPointValues['points_winner_weekly'] = 300; // Points awarded for having the most points for a week
-$wgUserStatsPointValues['points_winner_monthly'] = 400; // Points awarded for having the most points for a month
-$wgUserStatsPointValues['user_image'] = 1000; // Points awarded for adding your first avatar
-$wgNamespacesForEditPoints = array( 0 ); // Array of namespaces that can earn you points. Use numerical keys. Default is 0 -- only main namespace edits can earn a user points.
 // Chat
 	$wgChatKicks = true;
 	$wgChatMeCommand = true;
@@ -301,18 +267,12 @@ $wgGroupPermissions['bureaucrat']['nuke'] = true;
 $wgGroupPermissions['bureaucrat']['unblockself'] = true;
 $wgGroupPermissions['bureaucrat']['bureaucrat'] = true;
 $wgGroupPermissions['bureaucrat']['renameuser'] = false;
-$wgGroupPermissions['bureaucrat']['userboard-delete'] = true;
 $wgGroupPermissions['bureaucrat']['noratelimit'] = false;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
 $wgGroupPermissions['bureaucrat']['import'] = true;
 $wgGroupPermissions['bureaucrat']['importupload'] = true;
 $wgGroupPermissions['bureaucrat']['edituserjson'] = true;
 $wgGroupPermissions['bureaucrat']['editsitejson'] = true;
-$wgGroupPermissions['bureaucrat']['editothersprofiles'] = true;
-$wgGroupPermissions['bureaucrat']['populate-user-profiles'] = true;
-$wgGroupPermissions['bureaucrat']['avatarremove'] = true;
-$wgGroupPermissions['bureaucrat']['updatepoints'] = true;
-$wgGroupPermissions['bureaucrat']['generatetopusersreport'] = true;
 $wgGroupPermissions['steward']['interwiki'] = true;
 $wgGroupPermissions['steward']['abusefilter-modify-restricted'] = true;
 $wgGroupPermissions['steward']['unblockself'] = true;
@@ -329,11 +289,6 @@ $wgGroupPermissions['steward']['mwoauthproposeconsumer'] = true;
 $wgGroupPermissions['steward']['renameuser'] = true;
 $wgGroupPermissions['steward']['steward'] = true;
 
-$wgGroupPermissions['steward']['editothersprofiles-private'] = true;
-$wgGroupPermissions['steward']['populate-user-profiles'] = true;
-$wgGroupPermissions['steward']['avatarremove'] = true;
-$wgGroupPermissions['steward']['updatepoints'] = true;
-$wgGroupPermissions['steward']['generatetopusersreport'] = true;
 $wgGroupPermissions['steward']['editsitejs'] = true;
 $wgGroupPermissions['steward']['editsitecss'] = true;
 $wgGroupPermissions['steward']['viewpmlog'] = true;
