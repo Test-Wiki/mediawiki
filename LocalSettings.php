@@ -31,7 +31,15 @@ $wgServer = "https://testwiki.wiki";
 $wgResourceBasePath = $wgScriptPath;
 ## The URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
-$wgLogo = "$wgResourceBasePath/images/c/c9/Logo.png";
+$wgLogo = "$wgResourceBasePath/images/d/d6/TestWiki_Logo.png";
+$wgLogos = [
+	'icon' => "$wgResourceBasePath/images/b/ba/TestWiki_Icon.png",  // A version of the logo without wordmark and tagline
+	'wordmark' => [
+		'src' => "$wgResourceBasePath/images/8/8c/TestWiki_Wordmark.png",
+		'width' => 125,
+		'height' => 24,
+	],
+];
 $wgFavicon = "$wgResourceBasePath/images/favicon.ico";
 $wgAppleTouchIcon = "$wgResourceBasePath/images/favicon.ico";
 ## UPO means: this is also a user preference option
@@ -58,6 +66,7 @@ $wgUploadDirectory = "$IP/images";
 $wgEnableUploads = true;
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
+$wgFileExtensions = [ 'png', 'gif', 'jpg', 'jpeg', 'webp', 'svg' ];
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = true;
 # Periodically send a pingback to https://www.mediawiki.org/ with basic data
