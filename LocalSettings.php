@@ -31,11 +31,11 @@ $wgServer = "https://testwiki.wiki";
 $wgResourceBasePath = $wgScriptPath;
 ## The URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
-$wgLogo = "$wgResourceBasePath/images/d/d6/TestWiki_Logo.png";
+$wgLogo = "/images/d/d6/TestWiki_Logo.png";
 $wgLogos = [
-	'icon' => "$wgResourceBasePath/images/b/ba/TestWiki_Icon.png",  // A version of the logo without wordmark and tagline
+	'icon' => "/images/b/ba/TestWiki_Icon.png",  // A version of the logo without wordmark and tagline
 	'wordmark' => [
-		'src' => "$wgResourceBasePath/images/8/8c/TestWiki_Wordmark.png",
+		'src' => "/images/8/8c/TestWiki_Wordmark.png",
 		'width' => 125,
 		'height' => 24,
 	],
