@@ -35,7 +35,7 @@ $wgLogo = "/images/d/d6/TestWiki_Logo.png";
 $wgLogos = [
 	'icon' => "/images/b/ba/TestWiki_Icon.png",  // A version of the logo without wordmark and tagline
 	'wordmark' => [
-		'src' => "$/images/8/8c/TestWiki_Wordmark.png",
+		'src' => "/images/8/8c/TestWiki_Wordmark.png",
 		'width' => 125,
 		'height' => 24,
 	],
