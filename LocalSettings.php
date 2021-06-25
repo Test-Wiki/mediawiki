@@ -348,17 +348,13 @@ $wgCookieWarningGeoIp2Path = '/var/www/html/piwik/misc/GeoLite2-City.mmdb';
 $wgEnablePartialBlocks = true;
 
 //fosshost button
-$wgFooterIcons = [
-	"poweredby" => [
-		"fosshost" => [
-			// Defaults to point at
-			// "$wgResourceBasePath/resources/assets/poweredby_mediawiki_88x31.png"
-			// plus srcset for 1.5x, 2x resolution variants.
-			"src" => $wgResourceBasePath/mages/a/a3/Fosshost.png,
-			"url" => "https://fosshost.org/",
-			"alt" => "Powered by Fosshost",
-			"height" => "31",
-			"width" => "62",
-		]
-	],
+$wgFooterIcons['poweredby']['fosshost'] = [
+	// Defaults to point at
+	// "$wgResourceBasePath/resources/assets/poweredby_mediawiki_88x31.png"
+	// plus srcset for 1.5x, 2x resolution variants.
+	"src" => $wgResourceBasePath/images/a/a3/Fosshost.png,
+	"url" => "https://fosshost.org/",
+	"alt" => "Powered by Fosshost",
+	"height" => "31",
+	"width" => "62",
 ];
