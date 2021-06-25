@@ -357,12 +357,12 @@ $wgFooterIcons = [
 			"src" => $wgResourceBasePath/mages/a/a3/Fosshost.png,
 			"url" => "https://fosshost.org/",
 			"alt" => "Powered by Fosshost",
-		]
+		],
 		"mediawiki" => [
 			// Defaults to point at
 			// "$wgResourceBasePath/resources/assets/poweredby_mediawiki_88x31.png"
 			// plus srcset for 1.5x, 2x resolution variants.
-			"src" => null,
+			"src" => $wgResourceBasePath/resources/assets/poweredby_mediawiki_88x31.png,
 			"url" => "//www.mediawiki.org/",
 			"alt" => "Powered by MediaWiki",
 		]
