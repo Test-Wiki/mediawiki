@@ -346,3 +346,17 @@ $wgCookieWarningGeoIPLookup = 'php';
 $wgCookieWarningGeoIp2 = true;
 $wgCookieWarningGeoIp2Path = '/var/www/html/piwik/misc/GeoLite2-City.mmdb';
 $wgEnablePartialBlocks = true;
+
+//fosshost button
+$wgFooterIcons = [
+	"fosshost" => [
+		"mediawiki" => [
+			// Defaults to point at
+			// "$wgResourceBasePath/resources/assets/poweredby_mediawiki_88x31.png"
+			// plus srcset for 1.5x, 2x resolution variants.
+			"src" => $wgResourceBasePath/mages/a/a3/Fosshost.png,
+			"url" => "https://fosshost.org/",
+			"alt" => "Powered by Fosshost",
+		]
+	],
+];
