@@ -355,6 +355,6 @@ $wgFooterIcons['poweredby']['fosshost'] = [
 	"src" => "$wgResourceBasePath/images/a/a3/Fosshost.png",
 	"url" => "https://fosshost.org/",
 	"alt" => "Powered by Fosshost",
-	"height" => "31",
-	"width" => "62",
+	"height" => "512",
+	"width" => "1024",
 ];
