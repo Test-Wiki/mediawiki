@@ -352,7 +352,7 @@ $wgFooterIcons['poweredby']['fosshost'] = [
 	// Defaults to point at
 	// "$wgResourceBasePath/resources/assets/poweredby_mediawiki_88x31.png"
 	// plus srcset for 1.5x, 2x resolution variants.
-	"src" => $wgResourceBasePath/images/a/a3/Fosshost.png,
+	"src" => "$wgResourceBasePath/images/a/a3/Fosshost.png",
 	"url" => "https://fosshost.org/",
 	"alt" => "Powered by Fosshost",
 	"height" => "31",
