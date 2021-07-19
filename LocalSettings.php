@@ -60,6 +60,8 @@ $wgDBmysql5 = false;
 $wgMainCacheType = CACHE_ACCEL;
 $wgSessionCacheType = CACHE_DB;
 $wgMemCachedServers = [];
+$wgUseGzip = true;
+$wgUseFileCache = true;
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
 $wgUploadDirectory = "$IP/images";
