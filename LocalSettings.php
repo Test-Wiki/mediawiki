@@ -133,7 +133,7 @@ wfLoadExtensions( array(
 	'MassMessage',
 	'MatomoAnalytics',
 	'MediaWikiChat',
-        'MirahezeMagic/ReCaptchaNoCaptcha',
+	'MirahezeMagic/ReCaptchaNoCaptcha',
 	'MobileFrontend',
 	'Newsletter',
 	'Nuke',
