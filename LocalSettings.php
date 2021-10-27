@@ -29,19 +29,21 @@ $wgArticlePath = "/wiki/$1";
 $wgServer = "https://testwiki.wiki";
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
+$wgLoadScript = "https://bits.testwiki.wiki/load.php";
+$wgUploadPath = "https://static.testwiki.wiki";
 ## The URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
 $wgLogo = "$wgResourceBasePath/images/9/9b/TestWiki_Logo.svg";
 $wgLogos = [
-	'icon' => "$wgResourceBasePath/images/8/88/TestWiki_Icon.svg",  // A version of the logo without wordmark and tagline
+	'icon' => "$wgUploadPath/8/88/TestWiki_Icon.svg",  // A version of the logo without wordmark and tagline
 	'wordmark' => [
-		'src' => "$wgResourceBasePath/images/7/7a/TestWiki_Wordmark.svg",
+		'src' => "$wgUploadPath/7/7a/TestWiki_Wordmark.svg",
 		'width' => 125,
 		'height' => 24,
 	],
 ];
-$wgFavicon = "$wgResourceBasePath/images/favicon.ico";
-$wgAppleTouchIcon = "$wgResourceBasePath/images/favicon.ico";
+$wgFavicon = "$wgUploadPath/favicon.ico";
+$wgAppleTouchIcon = "$wgUploadPath/favicon.ico";
 ## UPO means: this is also a user preference option
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
