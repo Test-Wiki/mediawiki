@@ -147,6 +147,7 @@ wfLoadExtensions( array(
 	'Scribunto',
 	'SpamBlacklist',
 	'StaffPowers',
+	'TemplateStyles',
 	'Thanks',
 	'TitleBlacklist',
 	'Translate',
