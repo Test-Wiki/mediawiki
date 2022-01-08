@@ -189,6 +189,10 @@ $wgFlaggedRevsNamespaces = array( NS_MAIN, NS_FILE, NS_TEMPLATE, NS_PROJECT );
 $wgScribuntoUseCodeEditor = true;
 $wgDefaultUserOptions['visualeditor-enable'] = 1;
 $wgDefaultUserOptions['visualeditor-editor'] = "visualeditor";
+$wgVirtualRestConfig['modules']['parsoid'] = [
+    'url' =>  'https://testwiki.wiki/rest.php',
+    'domain' => 'testwiki.wiki',
+];
 $wgStaffPowersShoutWikiMessages = false;
 $wgTitleBlacklistSources = array(
   array(
