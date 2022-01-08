@@ -142,7 +142,6 @@ wfLoadExtensions( array(
 	'OAuth',
 	'OATHAuth',
 	'ParserFunctions',
-	'Parsoid',
 	'PdfHandler',
 	'RenameUser',
 	'Scribunto',
@@ -157,6 +156,7 @@ wfLoadExtensions( array(
 	'WikiEditor',
 	'WikiLove',
 ) );
+wfLoadExtension( 'Parsoid', 'vendor/wikimedia/parsoid/extension.json' );
 
 $wgVisualEditorEnableWikitext = true;
 $wgMWOAuthSecureTokenTransfer = true;
