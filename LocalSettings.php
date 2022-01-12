@@ -187,7 +187,6 @@ $wgFlaggedRevsProtection = true;
 $wgFlaggedRevsAutoReview = true;
 $wgFlaggedRevsNamespaces = array( NS_MAIN, NS_FILE, NS_TEMPLATE, NS_PROJECT );
 $wgScribuntoUseCodeEditor = true;
-$wgDebugLogFile = "/var/www/debug.log";
 $wgDefaultUserOptions['visualeditor-enable'] = 1;
 $wgDefaultUserOptions['visualeditor-editor'] = "visualeditor";
 $wgVirtualRestConfig['modules']['parsoid'] = [
