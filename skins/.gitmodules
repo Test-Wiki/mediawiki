@@ -1,0 +1,28 @@
+[submodule "Refreshed"]
+	path = Refreshed
+	url = https://github.com/wikimedia/mediawiki-skins-Refreshed
+	branch = master
+[submodule "Modern"]
+	path = Modern
+	url = https://github.com/wikimedia/mediawiki-skins-Modern
+	branch = REL1_37
+[submodule "Vector"]
+	path = Vector
+	url = https://github.com/wikimedia/mediawiki-skins-Vector
+	branch = REL1_37
+[submodule "CologneBlue"]
+	path = CologneBlue
+	url = https://github.com/wikimedia/mediawiki-skins-CologneBlue
+	branch = REL1_37
+[submodule "MonoBook"]
+	path = MonoBook
+	url = https://github.com/wikimedia/mediawiki-skins-MonoBook
+	branch = REL1_37
+[submodule "Timeless"]
+	path = Timeless
+	url = https://github.com/wikimedia/mediawiki-skins-Timeless
+	branch = REL1_37
+[submodule "Cosmos"]
+	path = Cosmos
+	url = https://github.com/wikimedia/mediawiki-skins-Cosmos
+	branch = REL1_37
