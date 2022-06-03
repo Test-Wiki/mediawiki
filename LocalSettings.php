@@ -170,7 +170,7 @@ $wgScribuntoDefaultEngine = 'luasandbox';
 	$wgChatMeCommand = true;
 	$wgChatLinkUsernames = true;
 // Other
-$wgMFDefaultSkinClass = 'SkinTimeless';
+$wgDefaultMobileSkin = 'timeless';
 $wgULSGeoService = false;
 $wgAllowUserCss = true;
 $wgAllowUserJs = true;
