@@ -364,13 +364,11 @@ $wgCookieWarningGeoIp2 = true;
 $wgCookieWarningGeoIp2Path = '/var/www/html/piwik/misc/GeoLite2-City.mmdb';
 $wgEnablePartialBlocks = true;
 $wgImportSources = array(
-		array(
 			'mediawikiwiki',
 			'metawikimedia',
 			'mhlogin',
 			'mhmeta',
 			'mhtest',
-		)
 	);
 
 //fosshost button
