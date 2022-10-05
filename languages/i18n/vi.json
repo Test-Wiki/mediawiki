@@ -57,7 +57,8 @@
 			"Withoutaname",
 			"Xð",
 			"לערי ריינהארט",
-			"아라"
+			"아라",
+			"RiceCracker12"
 		]
 	},
 	"tog-underline": "Gạch chân liên kết:",
@@ -644,6 +645,7 @@
 	"changeemail-submit": "Đổi địa chỉ",
 	"changeemail-throttled": "Bạn đã thử đăng nhập nhiều lần quá. Xin chờ $1 trước khi bạn thử lần nữa.",
 	"changeemail-nochange": "Xin hãy nhập một địa chỉ thư điện tử mới khác.",
+	"changeemail-maxlength": "Địa chỉ email của bạn phải không dài quá 255 ký tự.",
 	"resettokens": "Đặt lại token",
 	"resettokens-text": "Bạn có thể đặt lại token cho phép truy cập những dữ liệu riêng tư của tài khoản của bạn tại đây.\n\nBạn nên sử dụng chức năng này nếu đã vô tình chia sẻ chìa khóa với người khác hoặc tài khoản bị xâm nhập.",
 	"resettokens-no-tokens": "Không có token, không thể đặt lại.",
@@ -1902,7 +1904,7 @@
 	"upload_source_file": "(tập tin từ thiết bị của bạn)",
 	"listfiles-delete": "xóa",
 	"listfiles-summary": "Trang đặc biệt này liệt kê các tập tin được tải lên.",
-	"listfiles-userdoesnotexist": "Tài khoản người dùng “$1” không được đăng ký.",
+	"listfiles-userdoesnotexist": "Chưa có tài khoản với tên “$1”.",
 	"imgfile": "tập tin",
 	"listfiles": "Danh sách tập tin",
 	"listfiles_subpage": "Tập tin do $1 tải lên",
@@ -3844,7 +3846,7 @@
 	"limitreport-unstrip-size": "Kích thước unstrip sau khi bung",
 	"limitreport-unstrip-size-value": "$1/$2 byte",
 	"expandtemplates": "Bung bản mẫu",
-	"expand_templates_intro": "Trang đặc biệt này sẽ nhận vào mã wiki và bung tất cả các bản mẫu trong nó ra một cách đệ quy cho đến hết. Nó cũng bung cả những hàm cú pháp như <code><nowiki>{{</nowiki>#language:…}}</code>, và những biến số như <code><nowiki>{{</nowiki>CURRENTDAY}}</code>. Thực ra nó bung các dữ liệu bình thường đặt trong ngoặc móc.",
+	"expand_templates_intro": "Trang đặc biệt này sẽ nhận vào mã wiki và bung tất cả các bản mẫu trong nó ra một cách đệ quy cho đến hết.\nNó cũng bung cả các hàm cú pháp như <code><nowiki>{{</nowiki>#language:…}}</code>, và các biến như <code><nowiki>{{</nowiki>CURRENTDAY}}</code>.\nNói chung, nó bung gần như bất kỳ thứ gì được đặt trong hai cặp ngoặc kép.",
 	"expand_templates_title": "Tên của trang văn cảnh (để phân tích {{FULLPAGENAME}} v.v.):",
 	"expand_templates_input": "Mã wiki để bung:",
 	"expand_templates_output": "Kết quả",
