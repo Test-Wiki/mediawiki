@@ -378,3 +378,4 @@ $wgFooterIcons['fosshost']['fosshost'] = [
 	"height" => "44",
 	"width" => "88",
 ];
+$wgReadOnly = "Migrating to new server";
