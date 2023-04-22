@@ -153,6 +153,7 @@ wfLoadExtensions( array(
 	'Translate',
 	'UniversalLanguageSelector',
 	'VisualEditor',
+	'WebAuthn',
 	'WikiEditor',
 	'WikiLove',
 ) );
