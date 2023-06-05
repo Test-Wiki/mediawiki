@@ -126,12 +126,14 @@ wfLoadExtensions( array(
 	'CodeEditor',
 	'ConfirmEdit',
 	'CookieWarning',
+	'DiscussionTools',
 	'DismissableSiteNotice',
 	'Echo',
 	'FlaggedRevs',
 	'Gadgets',
 	'Interwiki',
 	'InputBox',
+	'Linter',
 	'MassMessage',
 	'MatomoAnalytics',
 	'MediaWikiChat',
@@ -363,3 +365,7 @@ $wgCookieWarningGeoIPLookup = 'php';
 $wgCookieWarningGeoIp2 = true;
 $wgCookieWarningGeoIp2Path = '/var/www/html/piwik/misc/DBIP-City.mmdb';
 $wgEnablePartialBlocks = true;
+
+$wgParsoidSettings = [
+    'linting' => true
+];
