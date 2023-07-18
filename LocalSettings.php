@@ -313,7 +313,6 @@ $wgGroupPermissions['steward']['mwoauthupdateownconsumer'] = true;
 $wgGroupPermissions['steward']['mwoauthproposeconsumer'] = true;
 $wgGroupPermissions['steward']['renameuser'] = true;
 $wgGroupPermissions['steward']['steward'] = true;
-
 $wgGroupPermissions['steward']['editsitejs'] = true;
 $wgGroupPermissions['steward']['editsitecss'] = true;
 $wgGroupPermissions['steward']['viewpmlog'] = true;
