@@ -316,6 +316,7 @@ $wgGroupPermissions['steward']['steward'] = true;
 $wgGroupPermissions['steward']['editsitejs'] = true;
 $wgGroupPermissions['steward']['editsitecss'] = true;
 $wgGroupPermissions['steward']['viewpmlog'] = true;
+$wgGroupPermissions['steward']['checkuser-log'] = true;
 $wgGroupPermissions['sysadmin']['editsitecss'] = true;
 $wgGroupPermissions['sysadmin']['editsitejs'] = true;
 $wgGroupPermissions['sysadmin']['siteadmin'] = true;
