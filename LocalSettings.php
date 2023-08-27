@@ -367,3 +367,4 @@ $wgEnablePartialBlocks = true;
 $wgParsoidSettings = [
     'linting' => true
 ];
+$wgCheckUserLogLogins = [true]
