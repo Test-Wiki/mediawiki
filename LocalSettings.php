@@ -356,6 +356,7 @@ unset( $wgGroupPermissions['staff'] );
 unset( $wgGroupPermissions['editor'] );
 $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
     unset( $wgGroupPermissions['staff'] );
+    unset( $wgGroupPermissions['editor'] );
 };
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
