@@ -353,6 +353,7 @@ $wgRestrictionTypes = array( 'create', 'edit', 'move', 'upload', 'delete', 'prot
 $wgCascadingRestrictionLevels = array( 'bureaucrat', 'sysop', 'steward' );
 $wgSemiprotectedRestrictionLevels = array( 'user', 'autoconfirmed', );
 unset( $wgGroupPermissions['staff'] );
+unset( $wgGroupPermissions['editor'] );
 $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
     unset( $wgGroupPermissions['staff'] );
 };
