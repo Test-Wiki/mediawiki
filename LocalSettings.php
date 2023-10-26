@@ -146,12 +146,15 @@ wfLoadExtensions( array(
 	'ParserFunctions',
 	'PdfHandler',
 	'RenameUser',
+	'ReplaceText',
 	'Scribunto',
 	'SpamBlacklist',
 	'StaffPowers',
+	'SyntaxHighlight_GeSHi',
 	'TemplateStyles',
 	'Thanks',
 	'TitleBlacklist',
+	'TorBlock',
 	'Translate',
 	'UniversalLanguageSelector',
 	'VisualEditor',
@@ -372,3 +375,5 @@ $wgParsoidSettings = [
 
 $wgNamespaceAliases['TW'] = NS_PROJECT;
 $wgNamespaceAliases['TWT'] = NS_PROJECT_TALK;
+
+$wgPygmentizePath = "/usr/local/bin/pygmentize";
