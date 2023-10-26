@@ -369,3 +369,6 @@ $wgEnablePartialBlocks = true;
 $wgParsoidSettings = [
     'linting' => true
 ];
+
+$wgNamespaceAliases['TW'] = NS_PROJECT;
+$wgNamespaceAliases['TWT'] = NS_PROJECT_TALK;
