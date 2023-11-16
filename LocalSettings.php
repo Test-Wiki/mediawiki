@@ -72,6 +72,7 @@ $wgUploadDirectory = "$IP/images";
 $wgEnableUploads = true;
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
+$wgSVGConverters['inkscape'] = '$path/inkscape -w $width -e $output $input';
 $wgSVGConverter = 'inkscape';
 $wgFileExtensions = [ 'png', 'gif', 'jpg', 'jpeg', 'webp', 'svg' ];
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
