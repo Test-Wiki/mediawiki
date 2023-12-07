@@ -363,6 +363,7 @@ $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
     unset( $wgGroupPermissions['editor'] );
 };
 $wgShowExceptionDetails = true;
+$wgVisualEditorEnableWikitext = true;
 $wgShowDBErrorBacktrace = true;
 $wgCookieWarningEnabled = true;
 $wgCookieWarningGeoIPLookup = 'php';
