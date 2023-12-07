@@ -123,7 +123,9 @@ wfLoadSkins( array(
 # The following extensions were automatically enabled:
 wfLoadExtensions( array(
 	'AbuseFilter',
+	'CategoryTree',
 	'CheckUser',
+	'CharInsert',
 	'CodeEditor',
 	'ConfirmEdit',
 	'CookieWarning',
@@ -146,7 +148,6 @@ wfLoadExtensions( array(
 	'OATHAuth',
 	'ParserFunctions',
 	'PdfHandler',
-	'RenameUser',
 	'ReplaceText',
 	'Scribunto',
 	'SpamBlacklist',
