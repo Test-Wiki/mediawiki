@@ -348,8 +348,8 @@ $wgAddGroups['sysop'] = array( 'editor', 'reviewer', 'autoreview', 'autopatrol',
 'researcher', 'chatmod', 'blockedfromchat'  );
 $wgRemoveGroups['sysop'] = array( 'editor', 'reviewer', 'autoreview', 'autopatrol', 'patroller', 'translateadmin', 'confirmed', 
 'researcher', 'chatmod', 'blockedfromchat' );
-$wgAddGroups['steward'] = array( 'sysop', 'interface-admin', 'bureaucrat', 'steward', 'checkuser', 'suppress' );
-$wgRemoveGroups['steward'] = array( 'sysop', 'interface-admin', 'bureaucrat', 'steward', 'checkuser', 'suppress' );
+$wgAddGroups['steward'] = array( 'sysop', 'interface-admin', 'bureaucrat', 'steward', 'checkuser', 'suppress', 'non-stewardsuppress' );
+$wgRemoveGroups['steward'] = array( 'sysop', 'interface-admin', 'bureaucrat', 'steward', 'checkuser', 'suppress', 'non-stewardsuppress' );
 $wgAddGroups['bureaucrat'] = array( 'bot', 'sysop', 'bureaucrat', 'interwiki-admin' );
 $wgRemoveGroups['bureaucrat'] = array( 'bot', 'sysop', 'bureaucrat', 'interwiki-admin' );
 $wgGroupsRemoveFromSelf['sysop'] = array( 'sysop' );
@@ -364,6 +364,9 @@ $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
     unset( $wgGroupPermissions['editor'] );
 };
 $wgShowExceptionDetails = true;
+#Non-Steward suppressors
+$wgGroupPermissions['non-stewardsuppress']['suppressionlog'] = true;
+$wgGroupsAddToSelf['non-stewardsuppress']['suppress']
 $wgVisualEditorEnableWikitext = true;
 $wgShowDBErrorBacktrace = true;
 $wgCookieWarningEnabled = true;
