@@ -368,7 +368,7 @@ $wgShowExceptionDetails = true;
 // Non-Steward suppressors
 $wgGroupPermissions['non-stewardsuppress']['suppressionlog'] = true;
 $wgGroupsAddToSelf['non-stewardsuppress']['suppress'];
-$wgGroupsRemoveFromSelf['non-stewardsuppress']['suppress']:
+$wgGroupsRemoveFromSelf['non-stewardsuppress']['suppress'];
 
 $wgVisualEditorEnableWikitext = true;
 $wgShowDBErrorBacktrace = true;
