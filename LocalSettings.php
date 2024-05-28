@@ -309,6 +309,21 @@ $wgGroupPermissions['deleter']['bigdelete'] = true;
 $wgGroupPermissions['deleter']['deleterevision'] = true;
 $wgGroupPermissions['deleter']['deletechangetags'] = true;
 
+/// Abusefilter restricted users
+$wgRevokePermissions['abusefilter-restricted']['abusefilter-log'] = true;
+$wgRevokePermissions['abusefilter-restricted']['abusefilter-view'] = true;
+
+/// Abusefilter administrators
+$wgGroupPermissions['abusefilter-admin']['abusefilter-log'] = true;
+$wgGroupPermissions['abusefilter-admin']['abusefilter-log-detail'] = true;
+$wgGroupPermissions['abusefilter-admin']['abusefilter-log-private'] = true;
+$wgGroupPermissions['abusefilter-admin']['abusefilter-modify'] = true;
+$wgGroupPermissions['abusefilter-admin']['abusefilter-modify-blocked-external-domains'] = true;
+$wgGroupPermissions['abusefilter-admin']['abusefilter-modify-restricted'] = true;
+$wgGroupPermissions['abusefilter-admin']['abusefilter-revert'] = true;
+$wgGroupPermissions['abusefilter-admin']['abusefilter-view'] = true;
+$wgGroupPermissions['abusefilter-admin']['abusefilter-view-private'] = true;
+
 /// Administrators
 $wgGroupPermissions['sysop']['abusefilter-log-detail'] = true;
 $wgGroupPermissions['sysop']['abusefilter-modify'] = true;
@@ -399,21 +414,6 @@ $wgGroupPermissions['sysadmin']['siteadmin'] = true;
 $wgGroupPermissions['sysadmin']['unblockable'] = true;
 $wgGroupPermissions['sysadmin']['unblockself'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
-
-/// Abusefilter restricted users
-$wgRevokePermissions['abusefilter-restricted']['abusefilter-log'] = true;
-$wgRevokePermissions['abusefilter-restricted']['abusefilter-view'] = true;
-
-/// Abusefilter administrators
-$wgGroupPermissions['abusefilter-admin']['abusefilter-log'] = true;
-$wgGroupPermissions['abusefilter-admin']['abusefilter-log-detail'] = true;
-$wgGroupPermissions['abusefilter-admin']['abusefilter-log-private'] = true;
-$wgGroupPermissions['abusefilter-admin']['abusefilter-modify'] = true;
-$wgGroupPermissions['abusefilter-admin']['abusefilter-modify-blocked-external-domains'] = true;
-$wgGroupPermissions['abusefilter-admin']['abusefilter-modify-restricted'] = true;
-$wgGroupPermissions['abusefilter-admin']['abusefilter-revert'] = true;
-$wgGroupPermissions['abusefilter-admin']['abusefilter-view'] = true;
-$wgGroupPermissions['abusefilter-admin']['abusefilter-view-private'] = true;
 
 // Permission assignments
 /// Administrators
