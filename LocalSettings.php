@@ -418,70 +418,69 @@ $wgGroupPermissions['sysadmin']['userrights'] = true;
 // Permission assignments
 /// Administrators
 $wgAddGroups['sysop'] = array(
-	'editor',
-	'reviewer',
-	'autoreview',
 	'autopatrol',
-	'patroller',
-	'translateadmin',
-	'confirmed', 
-	'researcher', 
+	'autoreview',
+	'blockedfromchat',
 	'chatmod',
-	'blockedfromchat'
+	'confirmed',
+	'editor',
+	'patroller',
+	'researcher',
+	'reviewer',
+	'translateadmin'
 );
 $wgRemoveGroups['sysop'] = array(
-	'editor',
-	'chatmod',
-	'reviewer',
-	'confirmed',
-	'patroller',
-	'autoreview',
 	'autopatrol',
+	'autoreview',
+	'blockedfromchat',
+	'chatmod',
+	'confirmed',
+	'editor',
+	'patroller',
 	'researcher',
-	'translateadmin',
-	'blockedfromchat'
-	'abusefilter-admin',
+	'reviewer',
+	'translateadmin'
 );
 
 /// Bureaucrats
 $wgAddGroups['bureaucrat'] = array(
-	'confirmed',
 	'autoconfirmed',
 	'autopatrol',
+	'bureaucrat',
+	'confirmed',
 	'patroller',
 	'suppress',
-	'translateadmin',
 	'sysop',
-	'bureaucrat'
+	'translateadmin'
 );
 $wgRemoveGroups['bureaucrat'] = array(
-	'confirmed',
 	'autoconfirmed',
+	'confirmed',
 	'patroller',
 	'suppress',
-	'translateadmin',
-	'sysop'
+	'sysop',
+	'translateadmin'
 );
 
 /// Stewards
 $wgAddGroups['steward'] = array(
-	'confirmed',
 	'autoconfirmed',
-	'patroller',
-	'suppress',
-	'translateadmin',
-	'sysop',
 	'bureaucrat',
-	'steward'
+	'confirmed',
+	'patroller',
+	'steward',
+	'suppress',
+	'sysop',
+	'translateadmin'
 );
 $wgRemoveGroups['steward'] = array(
-	'confirmed',
 	'autoconfirmed',
+	'bureaucrat',
+	'confirmed',
 	'patroller',
 	'suppress',
-	'translateadmin',
 	'sysop',
-	'bureaucrat'
+	'translateadmin'
 );
 
 /// System administrators
@@ -490,14 +489,15 @@ $wgRemoveGroups['sysadmin'] = true;
 
 // Restriction settings
 $wgRestrictionLevels = array(
-	'',
+	'*',
 	'user',
 	'autoconfirmed',
 	'autoreview',
 	'reviewer',
 	'sysop',
 	'bureaucrat',
-	'steward'
+	'steward',
+	'sysadmin'
 );
 
 $wgRestrictionTypes = array(
@@ -506,18 +506,22 @@ $wgRestrictionTypes = array(
 	'move',
 	'upload',
 	'delete',
+	'bigdelete',
+	'purge',
 	'protect'
 );
 
 $wgCascadingRestrictionLevels = array(
 	'sysop',
 	'bureaucrat',
-	'steward'
+	'steward',
+	'sysadmin'
 );
 
 $wgSemiprotectedRestrictionLevels = array(
 	'user',
 	'autoconfirmed',
+	'translateadmin'
 );
 
 // Unsets
