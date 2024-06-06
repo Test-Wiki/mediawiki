@@ -298,20 +298,18 @@ $wgGroupPermissions['chatmod']['chat'] = false;
 /// Interwiki administrators
 $wgGroupPermissions['interwiki-admin']['interwiki'] = true;
 
-/// Protecter
-$wgGroupPermissions['protecter']['protect'] = true;
-$wgGroupPermissions['protecter']['editprotected'] = true;
-$wgGroupPermissions['protecter']['editsemiprotected'] = true;
-
-/// Deleter
-$wgGroupPermissions['deleter']['delete'] = true;
-$wgGroupPermissions['deleter']['bigdelete'] = true;
-$wgGroupPermissions['deleter']['deleterevision'] = true;
-$wgGroupPermissions['deleter']['deletechangetags'] = true;
+/// Bot
+$wgGroupPermissions['bot']['writeapi'] = false;
 
 /// Abusefilter restricted users
 $wgRevokePermissions['abusefilter-restricted']['abusefilter-log'] = true;
+$wgRevokePermissions['abusefilter-restricted']['abusefilter-log-detail'] = true;
+$wgRevokePermissions['abusefilter-restricted']['abusefilter-log-private'] = true;
+$wgRevokePermissions['abusefilter-restricted']['abusefilter-modify'] = true;
+$wgRevokePermissions['abusefilter-restricted']['abusefilter-modify-restricted'] = true;
+$wgRevokePermissions['abusefilter-restricted']['abusefilter-revert'] = true;
 $wgRevokePermissions['abusefilter-restricted']['abusefilter-view'] = true;
+$wgRevokePermissions['abusefilter-restricted']['abusefilter-view-private'] = true;
 
 /// Abusefilter administrators
 $wgGroupPermissions['abusefilter-admin']['abusefilter-log'] = true;
@@ -415,6 +413,11 @@ $wgGroupPermissions['sysadmin']['unblockable'] = true;
 $wgGroupPermissions['sysadmin']['unblockself'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
 
+/// Non-Steward suppressors
+$wgGroupPermissions['non-stewardsuppress']['suppressionlog'] = true;
+$wgGroupsAddToSelf['non-stewardsuppress'] = array( 'suppress' );
+$wgGroupsRemoveFromSelf['non-stewardsuppress'] = array( 'suppress' );
+
 // Permission assignments
 /// Administrators
 $wgAddGroups['sysop'] = array(
@@ -466,9 +469,12 @@ $wgRemoveGroups['bureaucrat'] = array(
 
 /// Stewards
 $wgAddGroups['steward'] = array(
+	'abusefilter-admin',
+	'abusefilter-restricted',
 	'autoconfirmed',
 	'bureaucrat',
 	'confirmed',
+	'non-stewardsuppress',
 	'patroller',
 	'steward',
 	'suppress',
@@ -476,19 +482,18 @@ $wgAddGroups['steward'] = array(
 	'translateadmin'
 );
 $wgRemoveGroups['steward'] = array(
+	'abusefilter-admin',
+	'abusefilter-restricted',
 	'autoconfirmed',
 	'bureaucrat',
 	'confirmed',
+	'non-stewardsuppress',
 	'patroller',
 	'steward',
 	'suppress',
 	'sysop',
 	'translateadmin'
 );
-
-/// System administrators
-$wgAddGroups['sysadmin'] = true;
-$wgRemoveGroups['sysadmin'] = true;
 
 // Restriction settings
 $wgRestrictionLevels = array(
@@ -509,8 +514,6 @@ $wgRestrictionTypes = array(
 	'move',
 	'upload',
 	'delete',
-	'bigdelete',
-	'purge',
 	'protect'
 );
 
@@ -524,7 +527,6 @@ $wgCascadingRestrictionLevels = array(
 $wgSemiprotectedRestrictionLevels = array(
 	'user',
 	'autoconfirmed',
-	'translateadmin'
 );
 
 // Unsets
