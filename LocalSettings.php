@@ -480,6 +480,7 @@ $wgRemoveGroups['steward'] = array(
 	'bureaucrat',
 	'confirmed',
 	'patroller',
+	'steward',
 	'suppress',
 	'sysop',
 	'translateadmin'
