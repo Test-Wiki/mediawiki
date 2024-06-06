@@ -539,7 +539,7 @@ $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
 
 };
 
-// RC fed settings
+// RC feed settings
 $wgRCFeeds['irc'] = [
 	'uri' =>
 	'udp://129.153.11.72:9872',
