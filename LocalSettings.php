@@ -447,7 +447,6 @@ $wgRemoveGroups['sysop'] = array(
 
 /// Bureaucrats
 $wgAddGroups['bureaucrat'] = array(
-	
 	'autopatrol',
 	'bureaucrat',
 	'bot',
@@ -458,7 +457,6 @@ $wgAddGroups['bureaucrat'] = array(
 	'translateadmin'
 );
 $wgRemoveGroups['bureaucrat'] = array(
-	
 	'autopatrol',
 	'bureaucrat',
 	'bot',
