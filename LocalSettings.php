@@ -447,7 +447,7 @@ $wgRemoveGroups['sysop'] = array(
 
 /// Bureaucrats
 $wgAddGroups['bureaucrat'] = array(
-	'autoconfirmed',
+	
 	'autopatrol',
 	'bureaucrat',
 	'bot',
@@ -458,7 +458,7 @@ $wgAddGroups['bureaucrat'] = array(
 	'translateadmin'
 );
 $wgRemoveGroups['bureaucrat'] = array(
-	'autoconfirmed',
+	
 	'autopatrol',
 	'bureaucrat',
 	'bot',
@@ -473,7 +473,6 @@ $wgRemoveGroups['bureaucrat'] = array(
 $wgAddGroups['steward'] = array(
 	'abusefilter-admin',
 	'abusefilter-restricted',
-	'autoconfirmed',
 	'bureaucrat',
 	'confirmed',
 	'checkuser',
@@ -488,7 +487,6 @@ $wgAddGroups['steward'] = array(
 $wgRemoveGroups['steward'] = array(
 	'abusefilter-admin',
 	'abusefilter-restricted',
-	'autoconfirmed',
 	'bureaucrat',
 	'confirmed',
 	'checkuser',
