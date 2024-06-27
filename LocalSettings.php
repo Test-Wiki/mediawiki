@@ -364,7 +364,9 @@ $wgGroupPermissions['bureaucrat']['nuke'] = true;
 $wgGroupPermissions['bureaucrat']['renameuser'] = false;
 $wgGroupPermissions['bureaucrat']['unblockself'] = true;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
-
+/// Checkusers (AbuseFilter private details access)
+$wgGroupPermissions['checkuser']['abusefilter-privatedetails'] = true;
+$wgGroupPermissions['checkuser']['abusefilter-privatedetails-log'] = true;
 /// Suppressors
 $wgGroupPermissions['suppress']['abusefilter-log-detail'] = true;
 $wgGroupPermissions['suppress']['abusefilter-log-private'] = true;
@@ -379,6 +381,7 @@ $wgGroupPermissions['suppress']['deletedtext'] = true;
 $wgGroupPermissions['steward']['abusefilter-log-private'] = true;
 $wgGroupPermissions['steward']['abusefilter-modify-restricted'] = true;
 $wgGroupPermissions['steward']['abusefilter-view-private'] = true;
+$wgGroupPermissions['steward']['abusefilter-privatedetails-log'] = true;
 $wgGroupPermissions['steward']['checkuser-log'] = true;
 $wgGroupPermissions['steward']['editsitecss'] = true;
 $wgGroupPermissions['steward']['editsitejs'] = true;
@@ -563,7 +566,7 @@ $wgEnablePartialActionBlocks = true;
 $wgParsoidSettings = [
 	'linting' => true
 ];
-
+$wgAbuseFilterLogPrivateDetailsAccess = true;
 $wgNamespaceAliases['TW'] = NS_PROJECT;
 $wgNamespaceAliases['TWT'] = NS_PROJECT_TALK;
 
