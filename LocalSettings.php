@@ -159,6 +159,7 @@ wfLoadExtensions( array(
 	'OATHAuth',
 	'ParserFunctions',
 	'PdfHandler',
+        'Purge',
         'Report',
 	'ReplaceText',
 	'Scribunto',
