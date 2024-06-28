@@ -365,9 +365,11 @@ $wgGroupPermissions['bureaucrat']['nuke'] = true;
 $wgGroupPermissions['bureaucrat']['renameuser'] = false;
 $wgGroupPermissions['bureaucrat']['unblockself'] = true;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
+
 /// Checkusers (AbuseFilter private details access)
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails'] = true;
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails-log'] = true;
+
 /// Suppressors
 $wgGroupPermissions['suppress']['abusefilter-log-detail'] = true;
 $wgGroupPermissions['suppress']['abusefilter-log-private'] = true;
