@@ -154,6 +154,7 @@ wfLoadExtensions( array(
 	'MediaWikiChat',
 	'MobileFrontend',
 	'Newsletter',
+        'NewUserMessage',
 	'Nuke',
 	'OAuth',
 	'OATHAuth',
