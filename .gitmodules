@@ -10,6 +10,3 @@
 	path = skins
 	url = https://github.com/test-wiki/skins
 	branch = master
-[submodule "NewUserMessage"]
-	path = NewUserMessage
-	url = https://github.com/wikimedia/mediawiki-extensions-NewUserMessage
