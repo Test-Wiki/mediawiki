@@ -155,6 +155,7 @@ wfLoadExtensions( array(
 	'MobileFrontend',
 	'Newsletter',
 	'Nuke',
+        'NewUserMessage',
 	'OAuth',
 	'OATHAuth',
 	'ParserFunctions',
