@@ -240,6 +240,7 @@ $wgDefaultUserOptions['wikieditor-publish'] = 0;
 // User rights
 /// All
 $wgGroupPermissions['*']['abusefilter-log'] = true;
+$wgGroupPermissions['*']['abusefilter-log-detail'] = true;
 $wgGroupPermissions['*']['abusefilter-view'] = true;
 $wgGroupPermissions['*']['oathauth-enable'] = false;
 $wgGroupPermissions['*']['patrolmarks'] = true;
