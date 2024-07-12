@@ -174,6 +174,7 @@ wfLoadExtensions( array(
 	'Translate',
 	'UniversalLanguageSelector',
         'UnusedRedirects',
+        'UserMerge',
 	'VisualEditor',
 	'WebAuthn',
 	'WikiEditor',
