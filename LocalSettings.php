@@ -244,7 +244,7 @@ $wgGroupPermissions['*']['abusefilter-log'] = true;
 $wgGroupPermissions['*']['abusefilter-view'] = true;
 $wgGroupPermissions['*']['oathauth-enable'] = false;
 $wgGroupPermissions['*']['patrolmarks'] = true;
-
+$wgGroupPermissions['*']['abusefilter-log-detail'] = true;
 /// User
 $wgGroupPermissions['user']['createpage'] = false;
 $wgGroupPermissions['user']['createtalk'] = false;
