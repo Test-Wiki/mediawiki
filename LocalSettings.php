@@ -535,7 +535,9 @@ $wgSemiprotectedRestrictionLevels = array(
 
 // Grants
 $wgGrantPermissions['editprotected']['bureaucrat'] = true;
-
+// Allow all users (other than Stewards and Sysadmins) to be merged
+$wgUserMergeProtectedGroups = ['steward',
+    'sysadmin'];
 // Unsets
 unset( $wgGroupPermissions['staff'] );
 
