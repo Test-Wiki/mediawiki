@@ -367,6 +367,7 @@ $wgGroupPermissions['bureaucrat']['nuke'] = true;
 $wgGroupPermissions['bureaucrat']['renameuser'] = false;
 $wgGroupPermissions['bureaucrat']['unblockself'] = true;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
+$wgGroupPermissions['bureaucrat']['usermerge'] = false;
 
 /// Checkusers (AbuseFilter private details access)
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails'] = true;
@@ -406,6 +407,7 @@ $wgGroupPermissions['steward']['suppressionlog'] = true;
 $wgGroupPermissions['steward']['unblockable'] = true;
 $wgGroupPermissions['steward']['unblockself'] = true;
 $wgGroupPermissions['steward']['viewpmlog'] = true;
+$wgGroupPermissions['steward']['usermerge'] = true;
 
 /// System administrators
 $wgGroupPermissions['sysadmin']['editsitecss'] = true;
