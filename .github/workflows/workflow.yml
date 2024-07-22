@@ -1,21 +1,37 @@
-on:
-  push:
-  pull_request:
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  php-lint:
+    name: "PHPLint v9"
+
+    runs-on: "${{ matrix.operating-system }}"
+
     strategy:
+      fail-fast: false
+
       matrix:
-        php: ['8.0', '8.1', '8.2', '8.3']
+        operating-system:
+          - "ubuntu-20.04"
+          - "ubuntu-22.04"
+
+        php-version:
+          - "8.1"
+          - "8.2"
+          - "8.3"
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          submodules: true
-      - name: PHP ${{ matrix.php }} 
+          fetch-depth: 0
+          repository: sebastianbergmann/phpunit
+
+      - name: Setup PHP runtime
         uses: shivammathur/setup-php@v2
         with:
-          php-version: ${{ matrix.php }} 
+          php-version: "${{ matrix.php-version }}"
+          coverage: "none"
+
       - name: Run tests
         run: |
-          bash phplint.sh
+          curl -Ls https://github.com/overtrue/phplint/releases/latest/download/phplint.phar -o /usr/local/bin/phplint
+          chmod +x /usr/local/bin/phplint
+          /usr/local/bin/phplint --no-cache --no-progress -v
