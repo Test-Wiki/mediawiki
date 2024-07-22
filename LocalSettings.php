@@ -453,54 +453,40 @@ $wgRemoveGroups['sysop'] = array(
 
 /// Bureaucrats
 $wgAddGroups['bureaucrat'] = array(
-	'autopatrol',
 	'bureaucrat',
 	'bot',
-	'confirmed',
-	'patroller',
 	'sysop',
-	'interwiki-admin',
-	'translateadmin'
+	'interwiki-admin'
 );
 $wgRemoveGroups['bureaucrat'] = array(
-	'autopatrol',
 	'bureaucrat',
 	'bot',
-	'confirmed',
-	'patroller',
 	'sysop',
-	'interwiki-admin',
-	'translateadmin'
-);
+	'interwiki-admin'
+    );
 
 /// Stewards
 $wgAddGroups['steward'] = array(
 	'abusefilter-admin',
 	'abusefilter-restricted',
 	'bureaucrat',
-	'confirmed',
 	'checkuser',
 	'interface-admin',
 	'non-stewardsuppress',
-	'patroller',
 	'steward',
 	'suppress',
 	'sysop',
-	'translateadmin'
 );
 $wgRemoveGroups['steward'] = array(
 	'abusefilter-admin',
 	'abusefilter-restricted',
 	'bureaucrat',
-	'confirmed',
 	'checkuser',
 	'interface-admin',
 	'non-stewardsuppress',
-	'patroller',
 	'steward',
 	'suppress',
 	'sysop',
-	'translateadmin',
 );
 
 // Restriction settings
