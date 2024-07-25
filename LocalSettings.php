@@ -165,6 +165,7 @@ wfLoadExtensions( array(
 	'ReplaceText',
 	'Scribunto',
 	'SpamBlacklist',
+        'StopForumSpam',
 	'StaffPowers',
 	'SyntaxHighlight_GeSHi',
 	'TemplateStyles',
