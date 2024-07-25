@@ -549,7 +549,6 @@ $wgRCFeeds['irc'] = [
 // Other settings
 
 $wgShowExceptionDetails = true;
-
 $wgVisualEditorEnableWikitext = true;
 $wgShowDBErrorBacktrace = true;
 $wgCookieWarningEnabled = true;
