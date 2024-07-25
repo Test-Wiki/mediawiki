@@ -262,6 +262,7 @@ $wgGroupPermissions['user']['translate-import'] = true;
 $wgGroupPermissions['user']['translate-messagereview'] = true;
 $wgGroupPermissions['user']['user'] = true;
 $wgGroupPermissions['user']['writeapi'] = false;
+$wgGroupPermissions['user']['sfsblock-bypass'] = true;
 
 /// Confirmed
 $wgGroupPermissions['confirmed']['autoconfirmed'] = true;
@@ -353,6 +354,7 @@ $wgGroupPermissions['sysop']['unreviewedpages'] = true;
 $wgGroupPermissions['sysop']['upload'] = false;
 $wgGroupPermissions['sysop']['upload_by_url'] = true;
 $wgGroupPermissions['sysop']['validate'] = true;
+$wgGroupPermissions['sysop']['sfsblock-bypass'] = false;
 
 /// Bureaucrats
 $wgGroupPermissions['bureaucrat']['bureaucrat'] = true;
