@@ -568,3 +568,4 @@ $wgNamespaceAliases['TW'] = NS_PROJECT;
 $wgNamespaceAliases['TWT'] = NS_PROJECT_TALK;
 $wgPygmentizePath = "/usr/local/bin/pygmentize";
 $wgHCaptchaSiteKey = '6902a03c-cb28-4e42-9a5e-f7aae9a8175c';
+$wgSFSDenyListCacheDuration = '86400';
