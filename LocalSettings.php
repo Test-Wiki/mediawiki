@@ -657,4 +657,5 @@ $wgSFSDenyListCacheDuration = '86400';
 $wgCaptchaWhitelist =
 		'#^(https?:)?//([.a-z0-9-]+\\.)?((wikimedia|wikipedia|wiktionary|wikiquote|wikibooks|wikisource|wikispecies|mediawiki|wikinews|wikiversity|wikivoyage|wikidata|wikifunctions|wmflabs)\.org'
 		. '|dnsstuff\.com|completewhois\.com|wikimedia\.de)([?/\#]|$)#i';
+$wgTranslateDocumentationLanguageCode = 'qqq';
 $wgPageLanguageUseDB = true;
