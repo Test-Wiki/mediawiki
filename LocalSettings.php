@@ -548,6 +548,90 @@ $wgRCFeeds['irc'] = [
 	'add_interwiki_prefix' => false,
 	'omit_bots' => true,
 ];
+//Custom rate limits (specifically for badcaptcha
+$wgRateLimits = [
+	// Page edits
+	'edit' => [
+		'ip' => [ 8, 60 ],
+		'newbie' => [ 8, 60 ],
+		'user' => [ 90, 60 ],
+	],
+	// Page moves
+	'move' => [
+		'newbie' => [ 2, 120 ],
+		'user' => [ 8, 60 ],
+	],
+	// File uploads
+	'upload' => [
+		'ip' => [ 8, 60 ],
+		'newbie' => [ 8, 60 ],
+	],
+	// Page rollbacks
+	'rollback' => [
+		'user' => [ 10, 60 ],
+		'newbie' => [ 5, 120 ]
+	],
+	// Triggering password resets emails
+	'mailpassword' => [
+		'ip' => [ 5, 3600 ],
+	],
+	// Emailing other users using MediaWiki
+	'sendemail' => [
+		'ip' => [ 5, 86400 ],
+		'newbie' => [ 5, 86400 ],
+		'user' => [ 20, 86400 ],
+	],
+	'changeemail' => [
+		'ip-all' => [ 10, 3600 ],
+		'user' => [ 4, 86400 ]
+	],
+	// since 1.33 - rate limit email confirmations
+	'confirmemail' => [
+		'ip-all' => [ 10, 3600 ],
+		'user' => [ 4, 86400 ]
+	],
+	// Purging pages
+	'purge' => [
+		'ip' => [ 30, 60 ],
+		'user' => [ 30, 60 ],
+	],
+	// Purges of link tables
+	'linkpurge' => [
+		'ip' => [ 30, 60 ],
+		'user' => [ 30, 60 ],
+	],
+	// Files rendered via thumb.php or thumb_handler.php
+	'renderfile' => [
+		'ip' => [ 700, 30 ],
+		'user' => [ 700, 30 ],
+	],
+	// Same as above but for non-standard thumbnails
+	'renderfile-nonstandard' => [
+		'ip' => [ 70, 30 ],
+		'user' => [ 70, 30 ],
+	],
+	// Stashing edits into cache before save
+	'stashedit' => [
+		'ip' => [ 30, 60 ],
+		'newbie' => [ 30, 60 ],
+	],
+	// Stash base HTML for VE edits
+	'stashbasehtml' => [
+		'ip' => [ 5, 60 ],
+		'newbie' => [ 5, 60 ],
+	],
+	// Adding or removing change tags
+	'changetags' => [
+		'ip' => [ 8, 60 ],
+		'newbie' => [ 8, 60 ],
+	],
+        // Failing the CAPTCHA
+        'badcaptcha' => [
+                 'ip' => [ 15, 60 ],
+                 'newbie' => [ 15, 60 ],
+                 'user' => [ 30, 60 ],
+            ],
+];
 
 // Other settings
 
