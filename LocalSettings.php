@@ -659,3 +659,4 @@ $wgCaptchaWhitelist =
 		. '|dnsstuff\.com|completewhois\.com|wikimedia\.de)([?/\#]|$)#i';
 $wgTranslateDocumentationLanguageCode = 'qqq';
 $wgPageLanguageUseDB = true;
+$wgCheckUserLogLogins = true;
