@@ -659,3 +659,5 @@ $wgCaptchaWhitelist =
 		. '|dnsstuff\.com|completewhois\.com|wikimedia\.de)([?/\#]|$)#i';
 $wgPageLanguageUseDB = true;
 $wgCheckUserLogLogins = true;
+// Catching VPN/Proxy bots. hCaptcha is focused on privacy, and won't retain it for long
+$wgHCaptchaSendRemoteIP = true;
