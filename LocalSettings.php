@@ -149,6 +149,7 @@ wfLoadExtensions( array(
 	'Interwiki',
 	'InputBox',
 	'Linter',
+        'LoginNotify',
 	'MassMessage',
 	'MatomoAnalytics',
 	'MediaWikiChat',
