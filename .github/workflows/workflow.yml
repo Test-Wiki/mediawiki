@@ -22,9 +22,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          repository: sebastianbergmann/phpunit
 
       - name: Setup PHP runtime
         uses: shivammathur/setup-php@v2
@@ -36,4 +33,4 @@ jobs:
         run: |
           curl -Ls https://github.com/overtrue/phplint/releases/latest/download/phplint.phar -o /usr/local/bin/phplint
           chmod +x /usr/local/bin/phplint
-          /usr/local/bin/phplint --no-cache --no-progress -v --exclude=/home/runner/work/mediawiki/mediawiki/tests
+          /usr/local/bin/phplint --no-cache --no-progress -v
