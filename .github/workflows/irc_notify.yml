@@ -1,5 +1,5 @@
 name: "Push Notification"
-on: [push]
+on: [push, create, delete]
 
 jobs:
   test:
@@ -14,3 +14,21 @@ jobs:
           nickname: TestWikiGH
           message: |
             [${{ github.repository }}] ${{ github.actor }} pushed a commit to ${{ github.ref_name }} ${{ github.event.compare }}
+      - name: irc create
+        uses: rectalogic/notify-irc@v1
+        if: github.event_name == 'push'
+        with:
+          channel: "#MacFan4000"
+          server: "irc.libera.chat"
+          nickname: TestWikiGH
+          message: |
+            [${{ github.repository }}] ${{ github.actor }} created branch ${{ github.ref_name }}
+      - name: irc delete
+        uses: rectalogic/notify-irc@v1
+        if: github.event_name == 'push'
+        with:
+          channel: "#MacFan4000"
+          server: "irc.libera.chat"
+          nickname: TestWikiGH
+          message: |
+            [${{ github.repository }}] ${{ github.actor }} deleted branch ${{ github.ref_name }}
