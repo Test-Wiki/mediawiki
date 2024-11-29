@@ -1,0 +1,16 @@
+name: "Push Notification"
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: irc push
+        uses: rectalogic/notify-irc@v1
+        if: github.event_name == 'push'
+        with:
+          channel: "#MacFan4000"
+          server: "irc.libera.chat"
+          nickname: TestWikiGH
+          message: |
+            $[{{github.repository}}] {{ github.actor }} pushed a commit to {{github.ref_name}} {{ github.event.compare }}
