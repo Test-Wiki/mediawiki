@@ -13,4 +13,4 @@ jobs:
           server: "irc.libera.chat"
           nickname: TestWikiGH
           message: |
-            $[{{ github.repository }}] ${{ github.actor }} pushed a commit to ${{ github.ref_name }} ${{ github.event.compare }}
+            [${{ github.repository }}] ${{ github.actor }} pushed a commit to ${{ github.ref_name }} ${{ github.event.compare }}
