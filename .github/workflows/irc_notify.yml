@@ -16,7 +16,7 @@ jobs:
             [${{ github.repository }}] ${{ github.actor }} pushed a commit to ${{ github.ref_name }} ${{ github.event.compare }}
       - name: irc create
         uses: rectalogic/notify-irc@v1
-        if: github.event_name == 'push'
+        if: github.event_name == 'create'
         with:
           channel: "#MacFan4000"
           server: "irc.libera.chat"
@@ -25,7 +25,7 @@ jobs:
             [${{ github.repository }}] ${{ github.actor }} created branch ${{ github.ref_name }}
       - name: irc delete
         uses: rectalogic/notify-irc@v1
-        if: github.event_name == 'push'
+        if: github.event_name == 'delete'
         with:
           channel: "#MacFan4000"
           server: "irc.libera.chat"
