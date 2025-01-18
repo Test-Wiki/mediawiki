@@ -119,7 +119,7 @@ $wgDiff3 = "";
 ## names, ie 'vector', 'monobook':
 $wgDefaultSkin = "vector";
 
-wfLoadSkins( array( 
+wfLoadSkins( array(
 	'CologneBlue',
 	'Cosmos',
 	'Modern',
@@ -320,12 +320,15 @@ $wgRevokePermissions['abusefilter-restricted']['abusefilter-view-private'] = tru
 
 /// Abusefilter administrators
 $wgGroupPermissions['abusefilter-admin']['abusefilter-modify-restricted'] = true;
-
+$wgGroupPermissions['abusefilter-admin']['abusefilter-access-protected-vars'] = true;
+$wgGroupPermissions['abusefilter-admin']['abusefilter-protected-vars-log'] = true;
 /// Administrators
 $wgGroupPermissions['sysop']['abusefilter-log-detail'] = true;
 $wgGroupPermissions['sysop']['abusefilter-modify'] = true;
 $wgGroupPermissions['sysop']['abusefilter-modify-restricted'] = false;
 $wgGroupPermissions['sysop']['abusefilter-revert'] = true;
+$wgGroupPermissions['sysop']['abusefilter-access-protected-vars'] = false;
+$wgGroupPermissions['sysop']['abusefilter-protected-vars-log'] = false;
 $wgGroupPermissions['sysop']['avatarremove'] = false;
 $wgGroupPermissions['sysop']['chat'] = false;
 $wgGroupPermissions['sysop']['checkuser-limited'] = true;
@@ -391,6 +394,8 @@ $wgGroupPermissions['suppress']['deletedtext'] = true;
 $wgGroupPermissions['steward']['abusefilter-log-private'] = true;
 $wgGroupPermissions['steward']['abusefilter-modify-restricted'] = true;
 $wgGroupPermissions['steward']['abusefilter-view-private'] = true;
+$wgGroupPermissions['steward']['abusefilter-access-protected-vars'] = true;
+$wgGroupPermissions['steward']['abusefilter-protected-vars-log'] = true;
 $wgGroupPermissions['steward']['abusefilter-privatedetails-log'] = true;
 $wgGroupPermissions['steward']['checkuser-log'] = true;
 $wgGroupPermissions['steward']['editsitecss'] = true;
