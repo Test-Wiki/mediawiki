@@ -682,6 +682,6 @@ $wgCheckUserLogLogins = true;
 $wgHCaptchaSendRemoteIP = true;
 
 // DiscordNotifications
-$wgDiscordFromName = "DiscordRC";
+$wgDiscordFromName = "RCBot";
 $wgDiscordAvatarUrl = 'https://static.testwiki.wiki/b/ba/TestWiki_Icon.png';
 $wgDiscordNotificationWikiUrl = 'https://testwiki.wiki/';
