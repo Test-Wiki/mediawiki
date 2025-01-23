@@ -375,11 +375,14 @@ $wgGroupPermissions['bureaucrat']['import'] = true;
 $wgGroupPermissions['bureaucrat']['noratelimit'] = false;
 $wgGroupPermissions['bureaucrat']['nuke'] = true;
 $wgGroupPermissions['bureaucrat']['renameuser'] = false;
-$wgGroupPermissions['bureaucrat']['securepoll-create-poll'] = true;
-$wgGroupPermissions['bureaucrat']['securepoll-edit-poll'] = true;
 $wgGroupPermissions['bureaucrat']['unblockself'] = true;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
 $wgGroupPermissions['bureaucrat']['usermerge'] = false;
+
+/// electionadmin
+
+$wgGroupPermissions['electionadmin']['securepoll-create-poll'] = true;
+$wgGroupPermissions['electionadmin']['securepoll-edit-poll'] = true;
 
 /// Checkusers
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails'] = true;
@@ -471,13 +474,15 @@ $wgAddGroups['bureaucrat'] = array(
 	'bureaucrat',
 	'bot',
 	'sysop',
-	'interwiki-admin'
+	'interwiki-admin',
+	'electionadmin'
 );
 $wgRemoveGroups['bureaucrat'] = array(
 	'bureaucrat',
 	'bot',
 	'sysop',
-	'interwiki-admin'
+	'interwiki-admin',
+	'electionadmin'
     );
 
 /// Stewards
