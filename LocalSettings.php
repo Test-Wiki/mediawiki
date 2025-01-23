@@ -165,6 +165,7 @@ wfLoadExtensions( array(
         'Report',
 	'ReplaceText',
 	'Scribunto',
+	'SecurePoll',
 	'SpamBlacklist',
         'StopForumSpam',
 	'StaffPowers',
@@ -247,6 +248,7 @@ $wgGroupPermissions['*']['abusefilter-view'] = true;
 $wgGroupPermissions['*']['oathauth-enable'] = false;
 $wgGroupPermissions['*']['patrolmarks'] = true;
 $wgGroupPermissions['*']['abusefilter-log-detail'] = true;
+
 /// User
 $wgGroupPermissions['user']['createpage'] = false;
 $wgGroupPermissions['user']['createtalk'] = false;
@@ -322,6 +324,7 @@ $wgRevokePermissions['abusefilter-restricted']['abusefilter-view-private'] = tru
 $wgGroupPermissions['abusefilter-admin']['abusefilter-modify-restricted'] = true;
 $wgGroupPermissions['abusefilter-admin']['abusefilter-access-protected-vars'] = true;
 $wgGroupPermissions['abusefilter-admin']['abusefilter-protected-vars-log'] = true;
+
 /// Administrators
 $wgGroupPermissions['sysop']['abusefilter-log-detail'] = true;
 $wgGroupPermissions['sysop']['abusefilter-modify'] = true;
@@ -372,13 +375,16 @@ $wgGroupPermissions['bureaucrat']['import'] = true;
 $wgGroupPermissions['bureaucrat']['noratelimit'] = false;
 $wgGroupPermissions['bureaucrat']['nuke'] = true;
 $wgGroupPermissions['bureaucrat']['renameuser'] = false;
+$wgGroupPermissions['bureaucrat']['securepoll-create-poll'] = true;
+$wgGroupPermissions['bureaucrat']['securepoll-edit-poll'] = true;
 $wgGroupPermissions['bureaucrat']['unblockself'] = true;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
 $wgGroupPermissions['bureaucrat']['usermerge'] = false;
 
-/// Checkusers (AbuseFilter private details access)
+/// Checkusers
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails'] = true;
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails-log'] = true;
+$wgGroupPermissions['checkuser']['securepoll-view-voter-pii'] = true;
 
 /// Suppressors
 $wgGroupPermissions['suppress']['abusefilter-log-detail'] = true;
