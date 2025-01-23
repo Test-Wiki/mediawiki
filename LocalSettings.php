@@ -140,6 +140,7 @@ wfLoadExtensions( array(
 	'ConfirmEdit',
 	'ConfirmEdit/hCaptcha',
 	'CookieWarning',
+	'DiscordNotifications',
 	'DiscussionTools',
 	'DismissableSiteNotice',
 	'Echo',
@@ -674,3 +675,8 @@ $wgPageLanguageUseDB = true;
 $wgCheckUserLogLogins = true;
 // Catching VPN/Proxy bots. hCaptcha is focused on privacy, and won't retain it for long
 $wgHCaptchaSendRemoteIP = true;
+
+// DiscordNotifications
+$wgDiscordFromName = "DiscordRC";
+$wgDiscordAvatarUrl = 'https://static.testwiki.wiki/b/ba/TestWiki_Icon.png';
+$wgDiscordNotificationWikiUrl = 'https://testwiki.wiki/';
