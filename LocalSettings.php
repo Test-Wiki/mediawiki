@@ -178,7 +178,6 @@ wfLoadExtensions( array(
 	'Translate',
 	'UniversalLanguageSelector',
         'UnusedRedirects',
-        'UserMerge',
 	'VisualEditor',
 	'WebAuthn',
 	'WikiEditor',
@@ -378,7 +377,7 @@ $wgGroupPermissions['bureaucrat']['nuke'] = true;
 $wgGroupPermissions['bureaucrat']['renameuser'] = false;
 $wgGroupPermissions['bureaucrat']['unblockself'] = true;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
-$wgGroupPermissions['bureaucrat']['usermerge'] = false;
+
 
 /// electionadmin
 
@@ -426,7 +425,6 @@ $wgGroupPermissions['steward']['suppressionlog'] = true;
 $wgGroupPermissions['steward']['unblockable'] = true;
 $wgGroupPermissions['steward']['unblockself'] = true;
 $wgGroupPermissions['steward']['viewpmlog'] = true;
-$wgGroupPermissions['steward']['usermerge'] = true;
 
 /// System administrators
 $wgGroupPermissions['sysadmin']['editsitecss'] = true;
@@ -542,9 +540,6 @@ $wgSemiprotectedRestrictionLevels = array(
 
 // Grants
 $wgGrantPermissions['editprotected']['bureaucrat'] = true;
-// Allow all users (other than Stewards and Sysadmins) to be merged
-$wgUserMergeProtectedGroups = ['steward',
-    'sysadmin'];
 // Unsets
 unset( $wgGroupPermissions['staff'] );
 
