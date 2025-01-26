@@ -14,7 +14,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
 
-require_once( "/var/www/html/PrivateSettings.php" );
+require_once( "/var/www/PrivateSettings.php" );
 
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
