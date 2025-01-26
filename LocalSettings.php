@@ -667,7 +667,7 @@ $wgNamespaceAliases['TM'] = NS_TEMPLATE;
 $wgPygmentizePath = "/usr/local/bin/pygmentize";
 $wgHCaptchaSiteKey = '6902a03c-cb28-4e42-9a5e-f7aae9a8175c';
 $wgSFSDenyListCacheDuration = '3600';
-$wgSFSIPListLocation = 'https://www.stopforumspam.com/downloads/listed_ip_90_ipv46.gz'
+$wgSFSIPListLocation = 'https://www.stopforumspam.com/downloads/listed_ip_90_ipv46.gz';
 $wgCaptchaWhitelist =
 		'#^(https?:)?//([.a-z0-9-]+\\.)?((wikimedia|wikipedia|wiktionary|wikiquote|wikibooks|wikisource|wikispecies|mediawiki|wikinews|wikiversity|wikivoyage|wikidata|wikifunctions|wmflabs)\.org'
 		. '|dnsstuff\.com|completewhois\.com|wikimedia\.de)([?/\#]|$)#i';
