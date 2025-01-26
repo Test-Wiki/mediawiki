@@ -168,6 +168,7 @@ wfLoadExtensions( array(
 	'Scribunto',
 	'SecurePoll',
 	'SpamBlacklist',
+        'StopForumSpam',
 	'StaffPowers',
 	'SyntaxHighlight_GeSHi',
 	'TemplateStyles',
@@ -264,6 +265,7 @@ $wgGroupPermissions['user']['translate-import'] = true;
 $wgGroupPermissions['user']['translate-messagereview'] = true;
 $wgGroupPermissions['user']['user'] = true;
 $wgGroupPermissions['user']['writeapi'] = false;
+$wgGroupPermissions['user']['sfsblock-bypass'] = true;
 
 /// Confirmed
 $wgGroupPermissions['confirmed']['autoconfirmed'] = true;
@@ -359,6 +361,7 @@ $wgGroupPermissions['sysop']['unreviewedpages'] = true;
 $wgGroupPermissions['sysop']['upload'] = false;
 $wgGroupPermissions['sysop']['upload_by_url'] = true;
 $wgGroupPermissions['sysop']['validate'] = true;
+$wgGroupPermissions['sysop']['sfsblock-bypass'] = false;
 
 /// Bureaucrats
 $wgGroupPermissions['bureaucrat']['bureaucrat'] = true;
@@ -663,6 +666,7 @@ $wgNamespaceAliases['TWT'] = NS_PROJECT_TALK;
 $wgNamespaceAliases['TM'] = NS_TEMPLATE;
 $wgPygmentizePath = "/usr/local/bin/pygmentize";
 $wgHCaptchaSiteKey = '6902a03c-cb28-4e42-9a5e-f7aae9a8175c';
+$wgSFSDenyListCacheDuration = '3600';
 
 $wgCaptchaWhitelist =
 		'#^(https?:)?//([.a-z0-9-]+\\.)?((wikimedia|wikipedia|wiktionary|wikiquote|wikibooks|wikisource|wikispecies|mediawiki|wikinews|wikiversity|wikivoyage|wikidata|wikifunctions|wmflabs)\.org'
