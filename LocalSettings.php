@@ -556,7 +556,7 @@ $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
 // RC feed settings
 $wgRCFeeds['irc'] = [
 	'uri' =>
-	'udp://129.153.11.72:9872',
+	'udp://129.80.101.65:9872',
 	'formatter' => IRCColourfulRCFeedFormatter::class,
 	'add_interwiki_prefix' => false,
 	'omit_bots' => true,
