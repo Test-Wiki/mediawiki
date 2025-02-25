@@ -138,7 +138,7 @@ wfLoadExtensions( array(
 	'CharInsert',
 	'CodeEditor',
 	'ConfirmEdit',
-	'ConfirmEdit/hCaptcha',
+	'ConfirmEdit/QuestyCaptcha',
 	'CookieWarning',
 	'DiscordNotifications',
 	'DiscussionTools',
@@ -665,7 +665,6 @@ $wgNamespaceAliases['TW'] = NS_PROJECT;
 $wgNamespaceAliases['TWT'] = NS_PROJECT_TALK;
 $wgNamespaceAliases['TM'] = NS_TEMPLATE;
 $wgPygmentizePath = "/usr/local/bin/pygmentize";
-$wgHCaptchaSiteKey = '6902a03c-cb28-4e42-9a5e-f7aae9a8175c';
 $wgSFSDenyListCacheDuration = '3600';
 
 $wgCaptchaWhitelist =
@@ -673,8 +672,6 @@ $wgCaptchaWhitelist =
 		. '|dnsstuff\.com|completewhois\.com|wikimedia\.de)([?/\#]|$)#i';
 $wgPageLanguageUseDB = true;
 $wgCheckUserLogLogins = true;
-// Catching VPN/Proxy bots. hCaptcha is focused on privacy, and won't retain it for long
-$wgHCaptchaSendRemoteIP = true;
 
 // DiscordNotifications
 $wgDiscordFromName = "RCBot";
