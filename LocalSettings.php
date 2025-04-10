@@ -48,8 +48,8 @@ $wgLogos = [
 		'height' => 24,
 	],
 ];
-$wgFavicon = "$wgUploadPath/8/88/TestWiki_Icon.svg";
-$wgAppleTouchIcon = "$wgUploadPath/favicon.ico";
+$wgFavicon = "$wgUploadPath/d/d7/TestWiki_Favicon.png";
+$wgAppleTouchIcon = "$wgUploadPath/d/d7/TestWiki_Favicon.png";
 ## UPO means: this is also a user preference option
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
