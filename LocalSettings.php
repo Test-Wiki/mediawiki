@@ -388,6 +388,14 @@ $wgGroupPermissions['electionadmin']['securepoll-edit-poll'] = true;
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails'] = true;
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails-log'] = true;
 $wgGroupPermissions['checkuser']['securepoll-view-voter-pii'] = true;
+/// Rights-bot
+$wgGroupPermissions['rights-bot']['userrights'] = false;
+$wgGroupPermissions['rights-bot']['edit'] = true;
+$wgGroupPermissions['rights-bot']['createpage'] = true;
+$wgGroupPermissions['rights-bot']['createtalk'] = true;
+$wgGroupPermissions['rights-bot']['read'] = true;
+$wgGroupPermissions['rights-bot']['noratelimit'] = true;
+$wgGroupPermissions['rights-bot']['bot'] = true;
 
 /// Suppressors
 $wgGroupPermissions['suppress']['abusefilter-log-detail'] = true;
@@ -484,6 +492,14 @@ $wgRemoveGroups['bureaucrat'] = array(
 	'electionadmin'
     );
 
+/// Rights-bot
+$wgRemoveGroups['rights-bot'] = array(
+    'sysop',
+    'bureaucrat',
+    'interface-admin',
+    'abusefilter-admin',
+);
+
 /// Stewards
 $wgAddGroups['steward'] = array(
 	'abusefilter-admin',
@@ -495,6 +511,7 @@ $wgAddGroups['steward'] = array(
 	'steward',
 	'suppress',
 	'sysop',
+	'rights-bot',
 );
 $wgRemoveGroups['steward'] = array(
 	'abusefilter-admin',
@@ -506,6 +523,7 @@ $wgRemoveGroups['steward'] = array(
 	'steward',
 	'suppress',
 	'sysop',
+	'rights-bot',
 );
 
 // Restriction settings
