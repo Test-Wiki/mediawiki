@@ -496,8 +496,6 @@ $wgRemoveGroups['bureaucrat'] = array(
 $wgRemoveGroups['rights-bot'] = array(
     'sysop',
     'bureaucrat',
-    'interface-admin',
-    'abusefilter-admin',
 );
 
 /// Stewards
