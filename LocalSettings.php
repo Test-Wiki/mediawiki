@@ -443,12 +443,6 @@ $wgGroupPermissions['sysadmin']['unblockable'] = true;
 $wgGroupPermissions['sysadmin']['unblockself'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
 
-/// Non-Steward suppressors
-$wgGroupPermissions['non-stewardsuppress']['handle-reports'] = true;
-$wgGroupPermissions['non-stewardsuppress']['suppressionlog'] = true;
-$wgGroupsAddToSelf['non-stewardsuppress'] = array( 'suppress' );
-$wgGroupsRemoveFromSelf['non-stewardsuppress'] = array( 'suppress' );
-
 // Permission assignments
 /// Administrators
 $wgAddGroups['sysop'] = array(
@@ -505,7 +499,6 @@ $wgAddGroups['steward'] = array(
 	'bureaucrat',
 	'checkuser',
 	'interface-admin',
-	'non-stewardsuppress',
 	'steward',
 	'suppress',
 	'sysop',
@@ -517,7 +510,6 @@ $wgRemoveGroups['steward'] = array(
 	'bureaucrat',
 	'checkuser',
 	'interface-admin',
-	'non-stewardsuppress',
 	'steward',
 	'suppress',
 	'sysop',
