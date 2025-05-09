@@ -52,6 +52,7 @@ $wgFavicon = "$wgUploadPath/d/d7/TestWiki_Favicon.png";
 $wgAppleTouchIcon = "$wgUploadPath/d/d7/TestWiki_Favicon.png";
 ## UPO means: this is also a user preference option
 $wgEnableEmail = true;
+$wgAllowHTMLEmail = true;
 $wgEnableUserEmail = true; # UPO
 $wgEmergencyContact = "noreply@testwiki.wiki";
 $wgPasswordSender = "noreply@testwiki.wiki";
