@@ -390,10 +390,6 @@ $wgGroupPermissions['checkuser']['securepoll-view-voter-pii'] = true;
 
 /// Rights bot
 $wgGroupPermissions['rights-bot']['userrights'] = false;
-$wgGroupPermissions['rights-bot']['edit'] = true;
-$wgGroupPermissions['rights-bot']['createpage'] = true;
-$wgGroupPermissions['rights-bot']['createtalk'] = true;
-$wgGroupPermissions['rights-bot']['read'] = true;
 $wgGroupPermissions['rights-bot']['noratelimit'] = true;
 $wgGroupPermissions['rights-bot']['bot'] = true;
 
