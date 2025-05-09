@@ -267,6 +267,14 @@ $wgGroupPermissions['user']['user'] = true;
 $wgGroupPermissions['user']['writeapi'] = false;
 $wgGroupPermissions['user']['sfsblock-bypass'] = true;
 
+/// Auto confirmed users
+$wgGroupPermissions['autoconfirmed']['movefile'] = true;
+$wgGroupPermissions['autoconfirmed']['move'] = true;
+$wgGroupPermissions['autoconfirmed']['move-categorypages'] = true;
+$wgGroupPermissions['autoconfirmed']['move-rootuserpages'] = true; // can move root userpages
+$wgGroupPermissions['autoconfirmed']['move-subpages'] = true;
+$wgGroupPermissions['autoconfirmed']['skipcaptcha'] = true;
+
 /// Confirmed
 $wgGroupPermissions['confirmed']['autoconfirmed'] = true;
 $wgGroupPermissions['confirmed']['editsemiprotected'] = true;
@@ -276,14 +284,6 @@ $wgGroupPermissions['confirmed']['move-categorypages'] = true;
 $wgGroupPermissions['confirmed']['move-rootuserpages'] = true; // can move root userpages
 $wgGroupPermissions['confirmed']['move-subpages'] = true;
 $wgGroupPermissions['confirmed']['skipcaptcha'] = true;
-
-/// Auto confirmed users
-$wgGroupPermissions['autoconfirmed']['movefile'] = true;
-$wgGroupPermissions['autoconfirmed']['move'] = true;
-$wgGroupPermissions['autoconfirmed']['move-categorypages'] = true;
-$wgGroupPermissions['autoconfirmed']['move-rootuserpages'] = true; // can move root userpages
-$wgGroupPermissions['autoconfirmed']['move-subpages'] = true;
-$wgGroupPermissions['autoconfirmed']['skipcaptcha'] = true;
 
 /// Auto patrollers
 $wgGroupPermissions['autopatrol']['autopatrol'] = true;
@@ -296,13 +296,13 @@ $wgGroupPermissions['patroller']['rollback'] = true;
 $wgGroupPermissions['patroller']['suppressredirect'] = true;
 $wgGroupPermissions['patroller']['upload_by_url'] = true;
 
+/// Chat moderators
+$wgGroupPermissions['chatmod']['chat'] = false;
+
 /// Translation administrators
 $wgGroupPermissions['translateadmin']['pagelang'] = true;
 $wgGroupPermissions['translateadmin']['pagetranslation'] = true;
 $wgGroupPermissions['translateadmin']['translate-manage'] = true;
-
-/// Chat moderators
-$wgGroupPermissions['chatmod']['chat'] = false;
 
 /// Interwiki administrators
 $wgGroupPermissions['interwiki-admin']['interwiki'] = true;
@@ -379,8 +379,7 @@ $wgGroupPermissions['bureaucrat']['unblockself'] = true;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
 
 
-/// electionadmin
-
+/// Electionadmin
 $wgGroupPermissions['electionadmin']['securepoll-create-poll'] = true;
 $wgGroupPermissions['electionadmin']['securepoll-edit-poll'] = true;
 
@@ -388,7 +387,8 @@ $wgGroupPermissions['electionadmin']['securepoll-edit-poll'] = true;
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails'] = true;
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails-log'] = true;
 $wgGroupPermissions['checkuser']['securepoll-view-voter-pii'] = true;
-/// Rights-bot
+
+/// Rights bot
 $wgGroupPermissions['rights-bot']['userrights'] = false;
 $wgGroupPermissions['rights-bot']['edit'] = true;
 $wgGroupPermissions['rights-bot']['createpage'] = true;
