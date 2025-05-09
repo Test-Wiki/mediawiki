@@ -397,6 +397,12 @@ $wgGroupPermissions['rights-bot']['read'] = true;
 $wgGroupPermissions['rights-bot']['noratelimit'] = true;
 $wgGroupPermissions['rights-bot']['bot'] = true;
 
+/// Abuse bot
+$wgGroupPermissions['abuse-bot'] = $wgGroupPermissions['rights-bot']; // Apply permissions from the rights-bot group
+$wgGroupPermissions['abuse-bot']['editprotected'] = true;
+$wgGroupPermissions['abuse-bot']['block'] = true;
+$wgGroupPermissions['abuse-bot']['unblockable'] = true;
+
 /// Suppressors
 $wgGroupPermissions['suppress']['abusefilter-log-detail'] = true;
 $wgGroupPermissions['suppress']['abusefilter-log-private'] = true;
@@ -490,6 +496,11 @@ $wgRemoveGroups['bureaucrat'] = array(
 $wgRemoveGroups['rights-bot'] = array(
     'sysop',
     'bureaucrat',
+);
+
+$wgRemoveGroups['abuse-bot'] = array(
+	'sysop',
+	'bureaucrat'
 );
 
 /// Stewards
