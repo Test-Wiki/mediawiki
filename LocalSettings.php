@@ -80,7 +80,7 @@ $wgEnableUploads = true;
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 $wgSVGConverters['inkscape'] = '$path/inkscape -w $width -o $output $input';
-$wgSVGConverter = 'inkscape';
+$wgSVGConverter = 'rsvg';
 $wgFileExtensions = [
 	'png',
 	'gif',
