@@ -163,7 +163,7 @@ wfLoadExtensions( array(
 	'ParserFunctions',
 	'PdfHandler',
         'Purge',
-        'Report',
+//        'Report',
 	'ReplaceText',
 	'Scribunto',
 	'SecurePoll',
