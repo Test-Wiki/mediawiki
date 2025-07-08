@@ -277,6 +277,7 @@ $wgGroupPermissions['confirmed']['move-categorypages'] = true;
 $wgGroupPermissions['confirmed']['move-rootuserpages'] = true; // can move root userpages
 $wgGroupPermissions['confirmed']['move-subpages'] = true;
 $wgGroupPermissions['confirmed']['skipcaptcha'] = true;
+$wgGroupPermissions['confirmed']['autopatrol'] = true;
 
 /// Auto confirmed users
 $wgGroupPermissions['autoconfirmed']['movefile'] = true;
@@ -285,9 +286,11 @@ $wgGroupPermissions['autoconfirmed']['move-categorypages'] = true;
 $wgGroupPermissions['autoconfirmed']['move-rootuserpages'] = true; // can move root userpages
 $wgGroupPermissions['autoconfirmed']['move-subpages'] = true;
 $wgGroupPermissions['autoconfirmed']['skipcaptcha'] = true;
+$wgGroupPermissions['autoconfirmed']['autopatrol'] = true;
 
 /// Auto patrollers
 $wgGroupPermissions['autopatrol']['autopatrol'] = true;
+$wgGroupPermissions['autopatrol']['autoreview'] = true;
 
 /// Patrollers
 $wgGroupPermissions['patroller']['autopatrol'] = true;
@@ -296,6 +299,10 @@ $wgGroupPermissions['patroller']['patrol'] = true;
 $wgGroupPermissions['patroller']['rollback'] = true;
 $wgGroupPermissions['patroller']['suppressredirect'] = true;
 $wgGroupPermissions['patroller']['upload_by_url'] = true;
+$wgGroupPermissions['patroller']['editsemiprotected'] = true;
+$wgGroupPermissions['patroller']['autoreview'] = true;
+$wgGroupPermissions['patroller']['review'] = true;
+$wgGroupPermissions['patroller']['autconfirmed'] = true;
 
 /// Translation administrators
 $wgGroupPermissions['translateadmin']['pagelang'] = true;
@@ -381,7 +388,6 @@ $wgGroupPermissions['bureaucrat']['userrights'] = false;
 
 
 /// electionadmin
-
 $wgGroupPermissions['electionadmin']['securepoll-create-poll'] = true;
 $wgGroupPermissions['electionadmin']['securepoll-edit-poll'] = true;
 
@@ -389,6 +395,7 @@ $wgGroupPermissions['electionadmin']['securepoll-edit-poll'] = true;
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails'] = true;
 $wgGroupPermissions['checkuser']['abusefilter-privatedetails-log'] = true;
 $wgGroupPermissions['checkuser']['securepoll-view-voter-pii'] = true;
+
 /// Rights-bot
 $wgGroupPermissions['rights-bot']['userrights'] = false;
 $wgGroupPermissions['rights-bot']['edit'] = true;
@@ -549,15 +556,24 @@ $wgSemiprotectedRestrictionLevels = array(
 
 // Grants
 $wgGrantPermissions['editprotected']['bureaucrat'] = true;
+
 // Unsets
 unset( $wgGroupPermissions['staff'] );
 
 unset( $wgGroupPermissions['editor'] );
 
+unset( $wgGroupPermissions['autoreview'] );
+
+unset( $wgGroupPermissions['reviewer'] );
+
 $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
     unset( $wgGroupPermissions['staff']
 );
     unset( $wgGroupPermissions['editor']
+);
+    unset( $wgGroupPermissions['autoreview']
+);
+    unset( $wgGroupPermissions['reviewer']
 );
 
 };
@@ -570,6 +586,7 @@ $wgRCFeeds['irc'] = [
 	'add_interwiki_prefix' => false,
 	'omit_bots' => true,
 ];
+
 //Custom rate limits (specifically for badcaptcha)
 $wgRateLimits = [
 	// Page edits
@@ -656,7 +673,6 @@ $wgRateLimits = [
 ];
 
 // Other settings
-
 $wgShowExceptionDetails = true;
 $wgVisualEditorEnableWikitext = true;
 $wgShowDBErrorBacktrace = true;
