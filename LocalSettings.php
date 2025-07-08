@@ -121,6 +121,7 @@ $wgDiff3 = "";
 $wgDefaultSkin = "vector";
 
 wfLoadSkins( array(
+	'Citizen',
 	'CologneBlue',
 	'Cosmos',
 	'Modern',
