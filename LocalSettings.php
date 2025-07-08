@@ -139,6 +139,7 @@ wfLoadExtensions( array(
 	'CheckUser',
 	'CharInsert',
 	'CodeEditor',
+	'CodeMirror',
 	'ConfirmEdit',
 	'ConfirmEdit/QuestyCaptcha',
 	'CookieWarning',
@@ -697,6 +698,7 @@ $wgCaptchaWhitelist =
 		. '|dnsstuff\.com|completewhois\.com|wikimedia\.de)([?/\#]|$)#i';
 $wgPageLanguageUseDB = true;
 $wgCheckUserLogLogins = true;
+$wgCodeMirrorV6 = true;
 
 // DiscordNotifications
 $wgDiscordFromName = "RCBot";
