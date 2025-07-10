@@ -113,6 +113,7 @@ $wgDebugLogGroups = [
 	'error'	=> '/var/log/mediawiki/error.log',
 	'fatal'	=> '/var/log/mediawiki/exception.log',
 ];
+$wgDevelopmentWarnings = true;
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
 ## License and Creative Commons licenses are supported so far.
