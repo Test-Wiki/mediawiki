@@ -115,6 +115,7 @@ $wgDebugLogGroups = [
 	'silenced-error'	=> '/var/log/mediawiki/error.log',
 	'deprecated'	=> '/var/log/mediawiki/deprecation.log',
 ];
+$wgDevelopmentWarnings = true;
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
 ## License and Creative Commons licenses are supported so far.
