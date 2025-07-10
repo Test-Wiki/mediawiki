@@ -107,6 +107,14 @@ $wgUseFileCache = true;
 $wgLanguageCode = "en";
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
+# Logging
+$wgDebugLogGroups = [
+	'exception'	=> '/var/log/mediawiki/error.log',
+	'error'	=> '/var/log/mediawiki/error.log',
+	'fatal'	=> '/var/log/mediawiki/error.log',
+	'silenced-error'	=> '/var/log/mediawiki/error.log',
+	'deprecated'	=> '/var/log/mediawiki/deprecation.log',
+];
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
 ## License and Creative Commons licenses are supported so far.
