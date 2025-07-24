@@ -114,7 +114,6 @@ $wgDebugLogGroups = [
 	'fatal'	=> '/var/log/mediawiki/exception.log',
 	'authentication'	=> '/var/log/mediawiki/auth.log',
 ];
-];
 $wgDevelopmentWarnings = true;
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
