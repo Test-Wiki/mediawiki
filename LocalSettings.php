@@ -698,7 +698,7 @@ $wgAbuseFilterLogPrivateDetailsAccess = true;
 $wgNamespaceAliases['TW'] = NS_PROJECT;
 $wgNamespaceAliases['TWT'] = NS_PROJECT_TALK;
 $wgNamespaceAliases['TM'] = NS_TEMPLATE;
-$wgPygmentizePath = "/usr/local/bin/pygmentize";
+$wgPygmentizePath = "/usr/bin/pygmentize";
 $wgSFSDenyListCacheDuration = '3600';
 
 $wgCaptchaWhitelist =
