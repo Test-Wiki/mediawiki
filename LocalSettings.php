@@ -596,6 +596,12 @@ $wgRCFeeds['irc'] = [
 	'omit_bots' => true,
 ];
 
+$wgOATHRequiredForGroups = [
+    'interface-admin',
+    'steward',
+    'sysadmin'
+];
+
 //Custom rate limits (specifically for badcaptcha)
 $wgRateLimits = [
 	// Page edits
