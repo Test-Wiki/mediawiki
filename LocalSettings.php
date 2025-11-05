@@ -217,6 +217,7 @@ $wgCopyUploadsFromSpecialUpload = true;
 $wgMassMessageAccountUsername = 'Test Wiki message delivery';
 $wgLocaltimezone = "UTC";
 date_default_timezone_set( $wgLocaltimezone );
+$wgCaptchaClass = 'QuestyCaptcha';
 
 $wgAutoConfirmAge = 86400;
 $wgAutoConfirmCount = 1;
