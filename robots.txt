@@ -12,3 +12,6 @@ Disallow: /
 
 User-agent: ClaudeBot
 Disallow: /
+
+User-agent: Claude-SearchBot
+Disallow: /
