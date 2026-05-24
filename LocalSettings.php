@@ -90,7 +90,7 @@ $wgFileExtensions = [
 	'webp',
 	'svg' ];
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
-$wgUseInstantCommons = true;
+$wgUseInstantCommons = false;
 # Periodically send a pingback to https://www.mediawiki.org/ with basic data
 # about this MediaWiki instance. The Wikimedia Foundation shares this data
 # with MediaWiki developers to help guide future development efforts.
@@ -104,6 +104,7 @@ $wgShellLocale = "en_US.utf8";
 ## be publically accessible from the web.
 $wgCacheDirectory = "$IP/cache";
 $wgUseFileCache = true;
+$wgUseCdn = true;
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "en";
 # Changing this will log out all existing sessions.
@@ -179,6 +180,7 @@ wfLoadExtensions( array(
 	'ParserFunctions',
 	'PdfHandler',
         'Purge',
+	'QuickInstantCommons',
         'Report',
 	'ReplaceText',
 	'Scribunto',
