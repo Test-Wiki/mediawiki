@@ -74,6 +74,7 @@ $wgEnableSidebarCache = true;
 $wgUseGzip = true;
 $wgMemCachedServers = [];
 $wgJobRunRate = 0;
+$wgMaxShellMemory = 1024 * 1024;
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
 $wgUploadDirectory = "$IP/images";
