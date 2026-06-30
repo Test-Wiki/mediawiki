@@ -1,0 +1,20 @@
+on: 
+ push:
+ pull_request:
+
+jobs:
+  php-lint:
+    name: "PHPLint v9"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Lint PHP files
+
+        uses: overtrue/phplint@main
+        with:
+          path: .
+          options: --exclude=vendor
