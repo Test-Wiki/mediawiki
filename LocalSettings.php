@@ -197,7 +197,6 @@ wfLoadExtensions( array(
 	'UniversalLanguageSelector',
         'UnusedRedirects',
 	'VisualEditor',
-	'WebAuthn',
 	'WikiEditor',
 	'WikiLove',
 ));
