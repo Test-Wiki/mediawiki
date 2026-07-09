@@ -599,6 +599,7 @@ $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
 
 // RC feed settings
 $wgRCFeeds['irc'] = [
+	'class' => UDPRCFeedEngine::class,
 	'uri' =>
 	'udp://129.80.101.65:9872',
 	'formatter' => IRCColourfulRCFeedFormatter::class,
