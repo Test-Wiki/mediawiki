@@ -164,7 +164,7 @@ wfLoadExtensions( array(
 	'InputBox',
 	'JsonConfig',
 	'Linter',
-        'LoginNotify',
+	'LoginNotify',
 	'MagicNoCache',
 	'MassMessage',
 	'MatomoAnalytics',
@@ -173,19 +173,19 @@ wfLoadExtensions( array(
 	'MyVariables',
 	'Newsletter',
 	'Nuke',
-        'NewUserMessage',
+	'NewUserMessage',
 	'OAuth',
 	'OATHAuth',
 	'ParserFunctions',
 	'PdfHandler',
-        'Purge',
+	'Purge',
 	'QuickInstantCommons',
-        'Report',
+	'Report',
 	'ReplaceText',
 	'Scribunto',
 	'SecurePoll',
 	'SpamBlacklist',
-        'StopForumSpam',
+	'StopForumSpam',
 	'StaffPowers',
 	'SyntaxHighlight_GeSHi',
 	'TemplateData',
@@ -195,7 +195,7 @@ wfLoadExtensions( array(
 	'TorBlock',
 	'Translate',
 	'UniversalLanguageSelector',
-        'UnusedRedirects',
+	'UnusedRedirects',
 	'VisualEditor',
 	'WikiEditor',
 	'WikiLove',
@@ -206,6 +206,8 @@ wfLoadExtension(
 );
 
 $wgMWOAuthSecureTokenTransfer = true;
+$wgMWOAuthSharedUserSource= 'local';
+$wgMWOAuthSharedUserIDs = true;
 $wgOAuth2RequireCodeChallengeForPublicClients = false;
 $wgScribuntoDefaultEngine = 'luasandbox';
 
