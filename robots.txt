@@ -24,3 +24,13 @@ Disallow: /
 
 User-agent: AliyunSecBot
 Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: *
+Disallow: /
+Allow: /wiki/
