@@ -31,6 +31,20 @@ Disallow: /
 User-agent: wget
 Disallow: /
 
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CloudflareBrowserRenderingCrawler
+Disallow: /
+
 User-agent: *
 Disallow: /
 Allow: /wiki/
+Allow: /load.php?
+Content-Signal: search=yes,ai-train=no,use=reference
